@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Lato:wght@300;400;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/libraries/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>E-Commerce</title>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+</head>
+<body>
+<header class="sticky-top sticky">
+    <nav class="desktop-device width-container">
+        <div class="nav-menu_mobile" data-bs-toggle="offcanvas" data-bs-target="#nav-menu_mobile">
+            <div class="icon-menu"></div>
+        </div>
+        <div class="offcanvas offcanvas-start" id="nav-menu_mobile">
+            <div class="offcanvas-header">
+                <h1 class="offcanvas-title">Close</h1>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul>
+                    <li><a class="offcanvas-list" href="products.html">Jewellery</a></li>
+                    <li>
+                        <hr>
+                    </li>
+                    <li><a class="offcanvas-list" href="products.html">Sale</a></li>
+                    <li>
+                        <hr>
+                    </li>
+                    <li><a class="offcanvas-list" href="about_us.html">Blog</a></li>
+                    <li>
+                        <hr>
+                    </li>
+                    <li><a class="offcanvas-list" href="about_us.html">About Us</a></li>
+                    <li>
+                        <hr>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <a href="index.html" class="logo"></a>
+        <div class="categories display-none_mobile">
+            <ul class="gap-list_categories">
+                <li><a class="display-list_style" href="products.html">Jewellery</a></li>
+                <li><a class="display-list_style" href="products.html">Sale</a></li>
+                <li><a class="display-list_style" href="about_us.html">Blog</a></li>
+                <li><a class="display-list_style" href="about_us.html">About Us</a></li>
+            </ul>
+        </div>
+        <div>
+            <div class="gap-list_icons">
+                <div class="icon-person display-none_mobile"></div>
+                <div class="icon-like display-none_mobile"></div>
+                <div class="icon-bag me-3" id="cart_button" type="button" data-bs-toggle="offcanvas" data-bs-target="#cart">
+                    <span id="total-qty" class="amount-item">0</span>
+                </div>
+                <div class="offcanvas offcanvas-end" id="cart">
+                    <div class="offcanvas-header">
+                        <h1 class="offcanvas-title">Your cart</h1>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <p id="cart-empty">Your basket is empty</p>
+                        <!--render product in cart here-->
+                    </div>
+                    <div class="offcanvas-footer">
+                        <ul class="flex-icon_container">
+                            <li class="bg-circle" data-bs-toggle="tooltip" title="Order Note">
+                                <a class="icon-calendar"></a>
+                            </li>
+                            <li class="bg-circle" data-bs-toggle="tooltip" title="Add A Coupon">
+                                <a class="icon-percent"></a>
+                            </li>
+                            <li class="bg-circle" data-bs-toggle="tooltip" title="Estimate Shipping">
+                                <a class="icon-delivery"></a>
+                            </li>
+                        </ul>
+                        <hr>
+                        <div class="total-box">
+                            <p class="total-item">Subtotal:</p>
+                            <p id="subtotal" class="total-price">£100</p>
+                        </div>
+                        <p class="info-taxes">Taxes and shipping calculated at checkout</p>
+                        <button class="button-banners">
+                            <a class="link-style" href="checkout.html" type="submit">Check Out</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="container-fluid position-relative px-0">
+        <div class="sliders-viewport">
+            <div class="slide-container">
+                <div class="slide-first carousel_slide">
+                    <div class="container-fluid inside-text width-container">
+                        <div class="container">
+                            <h1 class="large-header h1-style">Now up to <span id="fadeEl"
+                                                                              class="text-show">30</span><span
+                                    class="sale-style">%</span> off*</h1>
+                            <h3 class="h3-style">MID YEAR SALE</h3>
+                            <button class="explore-button text-1">EXPLORE BESTSELLER
+                                <span class="icon-arrow"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-second carousel_slide">
+                    <div class="container-fluid inside-text">
+                        <div class="container">
+                            <h1 class="large-header h1-style">Oh, Hello Newness!</h1>
+                            <h3 class="h3-style">MID YEAR SALE</h3>
+                            <button class="explore-button">EXPLORE BESTSELLER
+                                <span class="icon-arrow"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-third carousel_slide">
+                    <div class="container-fluid inside-text">
+                        <div class="container">
+                            <h1 class="large-header h1-style">Best of the Best</h1>
+                            <h3 class="h3-style">MID YEAR SALE</h3>
+                            <button class="explore-button text-1">EXPLORE BESTSELLER
+                                <span class="icon-arrow"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="position-btn_left">
+            <div id="left-click" class="bg-icon">
+                <button class="arrow-left_circle"></button>
+            </div>
+        </div>
+        <div class="position-btn_right">
+            <div id="right-click" class="bg-icon">
+                <button class="arrow-right_circle"></button>
+            </div>
+        </div>
+        <div class="carousel_nav">
+            <button class="carousel_indicator current-slide"></button>
+            <button class="carousel_indicator"></button>
+            <button class="carousel_indicator"></button>
+        </div>
+    </section>
+    <section class="container-fluid bg-section_explore pt-5 px-0">
+        <div class="width-container">
+            <h5 class="highlight-text">Shop by</h5>
+            <h3 class="header-style">Explore the Range</h3>
+            <div class="grid-container">
+                <div class="grid-area">
+                    <div class="bracelets"></div>
+                    <div class="categories-button">
+                        <a class="link-style" href="products.html" target="_blank">Shop Bracelets</a>
+                    </div>
+                </div>
+                <div class="grid-area">
+                    <div class="charms"></div>
+                    <div class="categories-button">
+                        <a class="link-style" href="products.html" target="_blank">Shop Charms</a>
+                    </div>
+                </div>
+                <div class="grid-area">
+                    <div class="earrings"></div>
+                    <div class="categories-button">
+                        <a class="link-style" href="products.html" target="_blank">Shop Earrings</a>
+                    </div>
+                </div>
+                <div class="grid-area">
+                    <div class="necklaces"></div>
+                    <div class="categories-button">
+                        <a class="link-style" href="products.html" target="_blank">Shop Necklaces</a>
+                    </div>
+                </div>
+                <div class="grid-area">
+                    <div class="rings"></div>
+                    <div class="categories-button">
+                        <a class="link-style" href="products.html" target="_blank">Shop Rings</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid border-style pt-5 px-0">
+        <div class="width-container">
+            <div class="row utilities">
+                <div class="col-md-6 col-sm-10 col-12 mb-4 padding-img">
+                    <div class="img-magic"></div>
+                    <div class="banner-wrap_info py-4">
+                        <h3 class="title-banner">Elizabeth Stenhouse</h3>
+                        <p class="info-banner">Elevate your ear party with a choice of mix and matched stacks or
+                            striking solo
+                            statements.
+                        </p>
+                        <button class="button-banners">
+                            <a class="link-style" href="#">Shop Now</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-10 col-12 mb-4 padding-img">
+                    <div class="img-earrings"></div>
+                    <div class="banner-wrap_info pt-4 mb-4">
+                        <h3 class="title-banner">Heather Cohen® Earrings</h3>
+                        <p class="info-banner">Transition your outfits from day to night in one easy step with the
+                            power
+                            of a unique, luxe layered look</p>
+                        <button class="button-banners">
+                            <a class="link-style" href="#">Shop Now</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="m-0">
+    <section class="container-fluid border-style py-5 px-0">
+        <div class="width-container">
+            <h5 class="highlight-text">On trend hot jewellery</h5>
+            <h3 class="header-style">The Hot List</h3>
+            <div id="hot-list"></div>
+        </div>
+    </section>
+    <section class="container-fluid px-0">
+        <div class="overtext">
+            <h1 class="large-header">Stand Out In Style</h1>
+            <button class="button-video mt-2">
+                <a class="link-style" href="about_us.html">Discover Now</a>
+            </button>
+        </div>
+        <div class="video-position">
+            <video class="video-content" autoplay muted loop>
+                <source src="video/jewellery_story.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+    <section class="container-fluid px-0 pt-5">
+        <div class="width-container mb-5">
+            <h5 class="highlight-text">Discover this week's</h5>
+            <h3 class="header-style">Jewellery Favourites</h3>
+            <div id="week-collection"></div>
+        </div>
+    </section>
+    <hr class="m-0">
+    <section class="container-fluid border-style my-5">
+        <div class="width-container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-padding mb-5">
+                    <div>
+                        <h3 class="title-info mb-4">Jewellery Online at the Most Affordable Price</h3>
+                        <p class="info-banner mb-4">Behind our 15-year success is our panel of expert jewellers who
+                            have
+                            been scouring the entire globe in pursuit of the best and most stunning jewellery that
+                            can
+                            be offered at affordable price for you.</p>
+                        <p class="info-banner mb-4">Visit our online catalogue and shop for the finest earrings,
+                            rings,
+                            bracelets, watches, silver, and the most luxurious gemstones.</p>
+                        <button class="button-banners">
+                            <a class="link-style" href="#">Read more</a>
+                        </button>
+
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="img-rock"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="m-0">
+    <section class="container-fluid border-style py-5">
+        <div class="width-container position-relative">
+            <h5 class="highlight-text">News & Inspired</h5>
+            <h3 class="header-style">Jewellery Style Files</h3>
+            <div class="wrapper">
+                <div class="carousel-imgs">
+                    <div class="block-img">
+                        <img class="img-banner" src="img/banner_10.png" alt="Hypoallergenic Wedding Bands">
+                        <div class="date-block">
+                            <ul>
+                                <li>19</li>
+                                <li class="border-box"></li>
+                                <li>July</li>
+                            </ul>
+                        </div>
+                        <div class="font-style">
+                            <h3 class="name-banner">Necklaces</h3>
+                            <h3 class="name-block">Hypoallergenic Wedding Bands</h3>
+                            <a class="extra-info" href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="block-img">
+                        <img class="img-banner" src="img/banner_12.jpg" alt="Unique First Anniversary Gift Idea">
+                        <div class="date-block">
+                            <ul>
+                                <li>21</li>
+                                <li class="border-box"></li>
+                                <li>Aug</li>
+                            </ul>
+                        </div>
+                        <div class="font-style">
+                            <h3 class="name-banner">Necklaces</h3>
+                            <h3 class="name-block">Unique First Anniversary Gift Idea</h3>
+                            <a class="extra-info" href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="block-img">
+                        <img class="img-banner" src="img/banner_11.jpg" alt="COVID-19 Wedding Planning Advice">
+                        <div class="date-block">
+                            <ul>
+                                <li>7</li>
+                                <li class="border-box"></li>
+                                <li>Sep</li>
+                            </ul>
+                        </div>
+                        <div class="font-style">
+                            <h3 class="name-banner">Necklaces</h3>
+                            <h3 class="name-block">COVID-19 Wedding Planning Advice</h3>
+                            <a class="extra-info" href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="block-img">
+                        <img class="img-banner" src="img/banner_9.webp" alt="Glossary of jewellery terms">
+                        <div class="date-block">
+                            <ul>
+                                <li>12</li>
+                                <li class="border-box"></li>
+                                <li>Oct</li>
+                            </ul>
+                        </div>
+                        <div class="font-style">
+                            <h3 class="name-banner">Necklaces</h3>
+                            <h3 class="name-block">Glossary Of Jewellery Terms</h3>
+                            <a class="extra-info" href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="block-img">
+                        <img class="img-banner" src="img/banner_14.webp" alt="Traveling Solo is awesome">
+                        <div class="date-block">
+                            <ul>
+                                <li>5</li>
+                                <li class="border-box"></li>
+                                <li>Nov</li>
+                            </ul>
+                        </div>
+                        <div class="font-style">
+                            <h3 class="name-banner">Necklaces</h3>
+                            <h3 class="name-block">Traveling Solo Is Awesome</h3>
+                            <a class="extra-info" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-direction="left" class="icon-left_prev click-btn"></div>
+            <div data-direction="right" class="icon-right_next click-btn"></div>
+        </div>
+    </section>
+    <section class="container-fluid bg-section_guarantee border-style py-5 px-0">
+        <div class="width-container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-12 padding-style">
+                    <div class="icon-world"></div>
+                    <div class="block-text_style">
+                        <h3 class="title-icon">Shipping Worldwide</h3>
+                        <p class="lorem-text">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 padding-style">
+                    <div class="icon-return"></div>
+                    <div class="block-text_style">
+                        <h3 class="title-icon">14 Days Return</h3>
+                        <p class="lorem-text">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 padding-style">
+                    <div class="icon-security"></div>
+                    <div class="block-text_style">
+                        <h3 class="title-icon">Security Payment</h3>
+                        <p class="lorem-text mb-0">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="container-fluid border-style py-5 px-0">
+        <div class="width-container">
+            <div class="grid-footer_container">
+                <div class="grid-item">
+                    <h3 class="title-text text-1">Customer Services</h3>
+                    <ul>
+                        <li class="option-point"><a class="info-banner" href="#">Contact Us</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Track Your Order</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Product Care & Repair</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Book an Appointment</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Frequently Asked Questions</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Shipping & Returns</a></li>
+                    </ul>
+                </div>
+                <div class="grid-item">
+                    <h3 class="title-text text-1">About Us</h3>
+                    <ul>
+                        <li class="option-point"><a class="info-banner" href="about_us.html" target="_blank">About Us</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">FAQ</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Our Producers</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Sitemap</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Terms & Conditions</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="grid-item">
+                    <h3 class="title-text text-1">Catalog</h3>
+                    <ul>
+                        <li class="option-point"><a class="info-banner" href="products.html" target="_blank">Earrings</a></li>
+                        <li class="option-point"><a class="info-banner" href="products.html" target="_blank">Necklaces</a></li>
+                        <li class="option-point"><a class="info-banner" href="products.html" target="_blank">Bracelets</a></li>
+                        <li class="option-point"><a class="info-banner" href="products.html" target="_blank">Rings</a></li>
+                        <li class="option-point"><a class="info-banner" href="products.html" target="_blank">Jewelry Box</a></li>
+                    </ul>
+                </div>
+                <div class="grid-item">
+                    <h3 class="title-text text-1">Our Newsletter</h3>
+                    <p class="info-banner m-0">Sign up for the latest Ice offers and exclusives.</p>
+                    <form action="#" class="my-3">
+                        <div class="form-icon_container">
+                            <input class="input-style" type="email" name="email" placeholder="Your email" required>
+                            <button class="button-style" type="submit">
+                                <span class="icon-email"></span>
+                            </button>
+                        </div>
+                    </form>
+                    <ul class="flex-icon_container">
+                        <li class="bg-circle">
+                            <a class="icon-facebook" href="https://en-gb.facebook.com/"
+                               target="_blank"></a>
+                        </li>
+                        <li class="bg-circle">
+                            <a class="icon-twitter" href="https://twitter.com/i/flow/login"
+                               target="_blank"></a>
+                        </li>
+                        <li class="bg-circle">
+                            <a class="icon-instagram" href="https://www.instagram.com/"
+                               target="_blank"></a>
+                        </li>
+                        <li class="bg-circle">
+                            <a class="icon-youtube" href="https://www.youtube.com/"
+                               target="_blank"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<hr class="m-0">
+<footer>
+    <div class="container-fluid px-0">
+        <div class="width-container">
+            <div class="flex-footer_container">
+                <div>
+                    <p class="info-banner m-0">Copyright © 2024 Anastasia Hrynkevich</p>
+                </div>
+                <div class="img-payment"></div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div id="up-click" class="bg-scroll_up">
+    <button class="up-icon"></button>
+</div>
+</body>
+<script src="js/main.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/loader.js"></script>
+<script>
+    let products = new Products('#week-collection', 4, 1, 'Gold', 'favourites');
+    let hotListProduct = new Products('#hot-list', 4, 5, 'Gold', 'hot');
+    let sliders = new Sliders();
+    let blockSlider = new BlockSlider();
+    let utils = new Utilities();
+    Cart.renderCart();
+
+    //let time = new Countdown();
+    //let hotSale = new HotSale();
+
+    products.renderProducts();
+    hotListProduct.renderProducts();
+    sliders.init('.carousel_slide', '.carousel_slide', '.slide-container', 'right-click', 'left-click', 'carousel_indicator');
+    blockSlider.init('.wrapper');
+    utils.init();
+
+    // time.init('[data-days="25"]', '[data-hours="25"]', '[data-mins="25"]', '[data-secs="25"]', 'December 31, 2023 00:00:00');
+    // time.setInterval();
+
+    // hotSale.init('[data-days="20"]', '[data-hours="20"]', '[data-mins="20"]', '[data-secs="20"]', 'October 13, 2023 00:00:00');
+    // hotSale.setInterval();
+</script>
+</html>

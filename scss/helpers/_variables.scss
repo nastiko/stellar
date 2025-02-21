@@ -1,0 +1,43 @@
+$color-white: #ffffff;
+$color-transparent: #eceae8;
+$color-beluga: #f1f1f1;
+$color-satin_white: #ced4da;
+$color-cold_morning: #e5e5e5;
+$color-chesthut:#9d443e;
+$color-sand: #cb8161;
+$color-antique: #d4937d;
+$color-eveningdress: #d4a09b;
+$color-pink_diminishing: #fdf6f2;
+$color-twinningvine: #79a69a;
+$color-slipperystone: #8d6849;
+$color-bone: #e5d4c2;
+$color-eggshell:#f1ead7;
+$color-solarpower: #f7bc3d;
+$color-haywain: #cfaf55;
+$color-red: #ff0000;
+$color-planetarium: #0056A8;
+$color-placebo: #e7e7e7;
+$color-jupiter: #e1e1e1;
+$color-titanium: #e4e4e4;
+$color-pinball: #d3d3d3;
+$color-palladium: #b0b0b0;
+$color-lunar: #868686;
+$color-pinetree: #2c2f1e;
+$color-grullo: #a19d80;
+$color-gadien: linear-gradient(to bottom, #a19d80 50%,#f1ead7 50%);
+$color-black: #000000;
+
+$font-cormorant: 'Cormorant Garamond', serif;
+$font-lato: 'Lato', sans-serif;
+
+
+$space-20: clamp(1rem, -0.04rem + 1.76vw, 1.25rem);
+$space-26: clamp(1.5rem, calc(1.10rem + 0.60vw), 1.60rem);
+$space-40: clamp(1.5rem, calc(1.44rem + 4.07vw), 2.25rem);
+$space-48: clamp(1.5rem, calc(-0.16rem + 3.61vw), 3rem);
+$space-48_24: clamp(1.5rem, 1.44rem + 4.07vw, 3rem);
+$space-50: clamp(2.5rem, calc(1.38rem + 2.00vw), 3.13rem);
+$space-66: clamp(4.13rem, calc(2.38rem + 3.00vw), 5.00rem);
+$space-76: clamp(4.75rem, calc(4.25rem + 2.00vw), 6.00rem);
+$space-78: clamp(1.5rem, calc(1.99rem + 3.30vw), 4.88rem);
+$space-96: clamp(2.75rem, calc(-0.32rem + 7.22vw), 6.00rem);

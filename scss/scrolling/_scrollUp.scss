@@ -1,0 +1,24 @@
+@import "../helpers/placeholder";
+
+.bg-scroll_up {
+  background-color: $color-sand;
+  height: 45px;
+  width: 45px;
+  inset: auto 20px 20px auto;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: .3s;
+}
+
+.up-icon {
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/up_arrow.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  vertical-align: middle;
+  border: none;
+}

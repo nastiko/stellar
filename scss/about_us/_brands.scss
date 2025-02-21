@@ -1,0 +1,28 @@
+.block-brands {
+  .row {
+    justify-content: space-between;
+    @media only screen and (max-width: 62em) {
+      padding: 0 1rem;
+    }
+
+    .col-2 {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  img {
+    width: 175px;
+    height: 175px;
+
+    @media only screen and (max-width: 62em) {
+      width: 100px;
+      height: 100px;
+    }
+
+    @media only screen and (max-width: 48em) {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}

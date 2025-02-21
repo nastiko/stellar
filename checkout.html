@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Lato:wght@300;400;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/libraries/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <title>Checkout</title>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+</head>
+<body>
+<main class="testimonial-grid">
+    <nav>
+        <a href="index.html" class="logo"></a>
+    </nav>
+    <aside class="container-fluid">
+        <div class="flex-wrap_info">
+            <div class="items-total desktop">
+                <div class="item-info mb-3" data-id="VAR_ID">
+                    <div class="d-flex align-items-center">
+                        <a href="view_item.html?id=VAR_ID">
+                            <img src="img/earrings_6.webp" alt="VAR_TITLE">
+                            <span class="amount-item">0</span>
+                        </a>
+                        <a href="view_item.html?id=VAR_ID">
+                            <h6 class="product-name">Name</h6>
+                        </a>
+                    </div>
+                    <p class="mb-0">£150</p>
+                </div>
+                <form class="form-checkout form mb-2 mx-0" action="#">
+                    <div class="input-title form-control mb-1">
+                        <label for="discount" class="form-label">Discount</label>
+                        <input id="discount" type="text" name="discount" value="">
+                        <div class="error"></div>
+                    </div>
+                    <button id="apply-discount" class="input-group-text mb-1">Apply</button>
+                </form>
+                <div class="info-block">
+                    <p>Total</p>
+                    <p>£0</p>
+                </div>
+            </div>
+            <!--Need to change mobile device style-->
+            <!-- <div class="description">
+                <div class="description-info">
+                    <button class="btn-description_info border-bottom" type="button">
+                        <span class="icon-basket"></span>
+                        Show order summary
+                        <span class="icon"></span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-answer_inner" id="product-description">
+                            <div class="items-total">
+                                <div class="item-info mb-3" data-id="VAR_ID">
+                                    <div class="d-flex align-items-center">
+                                        <a href="view_item.html?id=VAR_ID">
+                                            <img src="img/earrings_6.webp" alt="VAR_TITLE">
+                                            <span id="total-qty" class="amount-item">0</span>
+                                        </a>
+                                        <a href="view_item.html?id=VAR_ID">
+                                            <h6 class="product-name">Name</h6>
+                                        </a>
+                                    </div>
+                                    <p class="mb-0">£150</p>
+                                </div>
+                                <form class="form mb-2" action="#">
+                                    <div class="form-floating mb-3 mt-3">
+                                        <input type="text" class="form-control" id="discount2"
+                                               placeholder="Discount code" name="discount">
+                                        <label for="discount2">Discount code</label>
+                                    </div>
+                                    <button class="input-group-text">Apply</button>
+                                </form>
+                                <div class="info-block">
+                                    <p>Total</p>
+                                    <p>£0</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+    </aside>
+    <div id="highlighter-page" class="current-page">
+        <p class="page-highlighter">
+            <a class="prev-link" href="index.html">Home</a>
+            <span class="arrow-backup"></span>
+            <a id="infoLink" class="default-page" href="#">Information</a>
+            <span class="arrow-backup"></span>
+            <a class="page-highlighter_inactive" href="#">Payment</a>
+        </p>
+    </div>
+    <div id="form-checkout" class="form-checkout">
+        <form id="form-review" action="#">
+            <h2 class="form-title mb-3">Contact</h2>
+            <div class="input-title form-control mb-1">
+                <label for="email" class="form-label">Email</label>
+                <input id="email" type="email" name="email">
+                <div class="error"></div>
+            </div>
+            <div class="form-check mb-4">
+                <input id="checkbox" class="form-check-input" type="checkbox" name="remember">
+                <p class="form-check-label m-0">Email me with news and offers</p>
+            </div>
+            <h2 class="form-title mb-3">Billing address</h2>
+            <div class="input-title form-control mb-3">
+                <label for="country" class="form-label">Country/Region</label>
+                <input type="text" id="country" name="country/region">
+                <div class="error"></div>
+            </div>
+            <div class="row mb-3">
+                <div class="col input-title form-control mb-1">
+                    <label for="first-name" class="form-label">First name</label>
+                    <input id="first-name" type="text" name="first name">
+                    <div class="error"></div>
+                </div>
+                <div class="col input-title form-control">
+                    <label class="form-label">Last name</label>
+                    <input type="text" name="last name">
+                </div>
+            </div>
+            <div class="input-title form-control mb-3">
+                <label for="address" class="form-label">Address</label>
+                <input type="text" id="address" name="address">
+                <div class="error"></div>
+            </div>
+            <div class="input-title form-control mb-3">
+                <label for="flat" class="form-label">Apartment, suite, etc.</label>
+                <input type="text" id="flat" name="flat">
+                <div class="error"></div>
+            </div>
+            <div class="row mb-1">
+                <div class="col input-title form-control">
+                    <label class="form-label">City</label>
+                    <input type="text" name="city">
+                </div>
+                <div class="col input-title form-control">
+                    <label for="postcode" class="form-label">Postcode</label>
+                    <input type="text" id="postcode" name="postcode">
+                    <div class="error"></div>
+                </div>
+            </div>
+            <div class="form-check mb-4">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="save info"> Save this information for next
+                    time
+                </label>
+            </div>
+            <div class="form-submit mb-4">
+                <a href="products.html">
+                    <span class="icon-content"></span>
+                    <span>Return to products</span>
+                </a>
+                <button id="payment" type="submit" class="btn btn-style">Continue to payment</button>
+            </div>
+        </form>
+        <div id="block-review" class="block-review active-block mb-5">
+            <div class="d-flex justify-content-between">
+                <div class="review-info">
+                    <p class="width-item mb-0">Contact</p>
+                    <p class="text-style">poroti8997@iturchia.com</p>
+                </div>
+                <a>
+                    <span class="link-point">Change</span>
+                </a>
+            </div>
+            <hr class="mt-0 mb-3">
+            <div class="d-flex justify-content-between">
+                <div class="review-info">
+                    <p class="width-item mb-0">Billing</p>
+                    <p class="text-style">58 Flat, Bournemouth, BH8 8SX</p>
+                </div>
+                <a>
+                    <span class="link-point">Change</span>
+                </a>
+            </div>
+        </div>
+        <div id="payment-info" class="payment-block active-block">
+            <h2 class="form-title">Payment</h2>
+            <p class="payment-subtitle">All transactions are secure and encrypted.</p>
+            <div class="payment-box">
+                <div class="icon-error_card"></div>
+                <p>This store can’t accept payments right now.</p>
+            </div>
+            <div class="flex-end">
+                <a id="prev-highlighter_page" href="">
+                    <span class="icon-content"></span>
+                    <span>Return to information</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        All rights reserved Stellar © 2024 Anastasia Hrynkevich
+    </footer>
+</main>
+</body>
+<script src="js/view-item.js"></script>
+<script src="js/checkout.js"></script>
+<script>
+    let validation = new ValidationForm('form-checkout', 'highlighter-page');
+    validation.init();
+</script>
+</html>

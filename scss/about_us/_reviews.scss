@@ -1,0 +1,46 @@
+@import "../helpers/variables";
+
+.block-reviews {
+
+  .block-img {
+    text-align: center;
+
+    .img-banner {
+      height: 300px !important;
+
+      @media only screen and (max-width: 30em) {
+        width: 324px !important;
+        height: 315px !important;
+      };
+    }
+
+    .info-container {
+      width: 100%;
+
+      .flex-stars {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+
+        .icon-star {
+          background-image: url("../img/star.svg");
+          background-repeat: no-repeat;
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+
+    .avatar {
+      width: 83px;
+      height: 83px;
+      border-radius: 50%;
+    }
+
+    .font-style {
+      .name-banner {
+        color: $color-black;
+      }
+    }
+  }
+}

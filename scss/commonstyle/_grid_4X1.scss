@@ -1,0 +1,166 @@
+@import "../helpers/variables";
+@import "../helpers/placeholder";
+@import "loader";
+
+.grid-basic_container {
+  display: grid;
+  grid-template-areas: 'one two three four';
+  justify-content: space-between;
+
+  @media only screen and (max-width: 82em) {
+    grid-template-areas: 'one two' 'three four';
+    justify-content: space-around;
+  }
+
+  @media only screen and (max-width: 30em) {
+    justify-content: space-between;
+    padding: 0 1rem;
+
+    .product-name {
+      a {
+        font-size: 10px;
+      }
+    }
+
+    .product-price {
+      font-size: 14px;
+    }
+  }
+
+  @media only screen and (max-width: 23em) {
+    justify-content: space-around;
+  }
+
+  .grid {
+    .info-container {
+      width: 100%;
+
+      .flex-stars {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+
+        .icon-star {
+          background-image: url("../img/star.svg");
+          background-repeat: no-repeat;
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+
+  .grid:nth-child(1) {
+    grid-area: one;
+  }
+
+  .grid:nth-child(2) {
+    grid-area: two;
+    justify-items: end;
+  }
+
+  .grid:nth-child(3) {
+    grid-area: three;
+  }
+
+  .grid:nth-child(4) {
+    grid-area: four;
+  }
+
+  .grid:nth-child(1), .grid:nth-child(3) {
+    display: grid;
+    justify-items: start;
+  }
+
+  .grid:nth-child(2), .grid:nth-child(4) {
+    display: grid;
+    justify-items: end;
+  }
+
+  .img-container {
+    width: 100%;
+    position: relative;
+
+    @media only screen and (max-width: 45em) {
+      width: 275px;
+      height: 275px;
+    }
+
+    @media only screen and (max-width: 35em) {
+      width: 175px;
+      height: 175px;
+    }
+
+    @media only screen and (max-width: 23em) {
+      width: 165px;
+      height: 165px;
+    }
+
+    .img-style_template {
+      width: 330px;
+      height: 330px;
+      object-fit: contain;
+
+      @media only screen and (max-width: 45em) {
+        width: 275px;
+        height: 275px;
+      }
+
+      @media only screen and (max-width: 35em) {
+        width: 175px;
+        height: 175px;
+      }
+
+      @media only screen and (max-width: 23em) {
+        width: 165px;
+        height: 165px;
+      }
+    }
+
+    .sale-display {
+      position: absolute;
+      z-index: 1;
+      top: 10px;
+      left: 10px;
+
+      .red-box {
+        background-color: $color-red;
+        color: $color-white;
+        font-size: 13px;
+        text-align: center;
+        padding: 2px 7px;
+      }
+    }
+
+    .time-box {
+      width: 90%;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      text-align: center;
+      background-color: white;
+      border: 2px solid $color-sand;
+      position: absolute;
+      bottom: 15px;
+      right: 17px;
+      padding: 3px 20px;
+      margin: 0 auto;
+
+      @media only screen and (max-width: 35em) {
+        display: none;
+      }
+
+      .countdown {
+        color: $color-sand;
+        @include font-weight(heavy);
+      }
+
+      .block-box {
+        display: block;
+        font-size: 11px;
+        @include font-weight(medium);
+      }
+    }
+  }
+}

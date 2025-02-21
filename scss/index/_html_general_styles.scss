@@ -1,0 +1,14 @@
+@import "../helpers/variables";
+
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  @media only screen and (max-width: 92em) {
+    overflow-x: hidden;
+  }
+}
+
+body {
+  font-family: $font-lato;
+  color: $color-black !important;
+}

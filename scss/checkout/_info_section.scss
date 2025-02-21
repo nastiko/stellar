@@ -1,0 +1,398 @@
+@import "../helpers/variables";
+@import "../helpers/placeholder";
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+  grid-template-rows: 90px 40px 1fr 75px;
+  grid-template-areas:
+          "header disclosure "
+          "subheader disclosure "
+          "content disclosure "
+          "footer disclosure ";
+  min-height: 100vh;
+
+  @media only screen and (max-width: 62em) {
+    display: block;
+  }
+
+  nav {
+    margin: 2rem 5rem 0 5rem;
+
+    @media only screen and (max-width: 32em) {
+      margin: 1rem 1rem 0 1rem;
+    }
+
+    .logo {
+      display: block;
+      background: url("../img/logo.jpg") no-repeat center;
+      background-size: contain;
+      width: 150px;
+      height: 70px;
+      grid-area: header;
+    }
+  }
+
+
+  aside {
+    grid-area: disclosure;
+    background-color: $color-transparent;
+    border-left: 1px solid $color-lunar;
+    padding: 0;
+
+    .flex-wrap_info {
+      padding: 2rem 4rem;
+      margin: 0;
+
+      @media only screen and (max-width: 62em) {
+        padding: 0;
+      }
+
+      .desktop {
+        @media only screen and (max-width: 62em) {
+          display: none;
+        }
+      }
+
+      .items-total {
+        max-width: 418px;
+        margin-top: 1rem;
+
+        @media only screen and (max-width: 62em) {
+          max-width: 100%;
+          margin: 1rem 5rem 0 5rem;
+        }
+
+        @media only screen and (max-width: 32em) {
+          margin: 1rem 1rem 0 1rem;
+        }
+
+        .item-info {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          color: $color-black;
+
+          img {
+            width: 72px;
+            height: 72px;
+            border: 1px solid $color-lunar;
+          }
+
+          .amount-item {
+            top: -35px;
+            left: -15px;
+            padding: 5px 8px
+          }
+
+          .product-name, p {
+            font-size: 12px;
+          }
+        }
+
+        .form {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 15px;
+
+            .form-control {
+              &:focus {
+                border: 1px solid $color-satin_white;
+                box-shadow: none;
+              }
+            }
+
+            label {
+              opacity: .65;
+            }
+
+          .input-group-text {
+            color: $color-white;
+            background-color: $color-palladium;
+            padding: 13px;
+          }
+        }
+
+        .info-block {
+          display: flex;
+          justify-content: space-between;
+          font-size: 18px;
+          color: $color-black;
+        }
+      }
+
+      .description {
+        display: none;
+
+        @media only screen and (max-width: 62em) {
+          display: block;
+        }
+
+        .description-info {
+
+          .border-bottom {
+            color: $color-planetarium;
+            text-transform: inherit;
+            border-bottom: none !important;
+            padding: 0.5rem 5rem 0 5rem;
+
+            .icon-basket {
+              content: url("../img/basket.svg");
+              display: inline-block;
+              width: 18px;
+              height: 18px;
+              vertical-align: text-top;
+              margin-right: 7px;
+              position: relative;
+              inset: 1px;
+            }
+
+            @media only screen and (max-width: 32em) {
+              padding: 0.5rem 1rem 0 1rem;
+            }
+
+            .icon {
+              filter: invert(10%) sepia(84%) saturate(5320%) hue-rotate(225deg) brightness(94%) contrast(91%);
+              inset: 22px auto auto auto;
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .current-page {
+    grid-area: subheader;
+    margin: 0 5rem;
+
+    @media only screen and (max-width: 62em) {
+      margin: 1rem 5rem 0 5rem;
+    }
+
+    @media only screen and (max-width: 32em) {
+      margin: 1rem 1rem 0 1rem;
+    }
+
+    .page-highlighter {
+      justify-content: flex-start;
+
+      .default-page {
+        color: $color-black;
+        cursor: default;
+      }
+
+      .page-highlighter_inactive {
+        color: $color-lunar;
+        cursor: default;
+      }
+    }
+  }
+
+  .form-checkout {
+    grid-area: content;
+    margin: 0 5rem;
+
+    @media only screen and (max-width: 32em) {
+      margin: 1rem 1rem 0 1rem;
+    }
+
+    .form-title {
+      font-size: 17px;
+      color: $color-black;
+      @include font-weight(heavy);
+
+    }
+
+    .input-title {
+      display: inline-block;
+      padding: 5px 0 5px 15px;
+
+      input {
+        display: block;
+        width: 100%;
+        font-size: 14px;
+        outline: none;
+        border: none;
+      }
+
+      label {
+        display: block;
+        font-size: 12px;
+        color: $color-lunar;
+        margin: 0;
+      }
+    }
+
+    .form-check {
+      .form-check-label {
+        font-size: 14px;
+        color: $color-black;
+      }
+
+      .form-check-input {
+        cursor: pointer;
+
+        &:focus {
+          border: 1px solid $color-lunar;
+          box-shadow: none;
+
+        }
+      }
+    }
+
+    .row {
+      --bs-gutter-x: 0;
+      gap: 25px;
+    }
+
+    .form-control.success {
+      border-color: #09c372;
+      color: #09c372;
+    }
+
+    .form-control.error {
+      border-color: #ff3860;
+      color: #ff3860;
+    }
+
+    .form-control.success input {
+      color: #09c372;
+      border-color: #09c372;
+      margin-top: 2px;
+      font-size: 12px;
+    }
+
+    .form-control.error input {
+      color: #ff3860;
+      border-color: #ff3860;
+      margin-top: 2px;
+      font-size: 12px;
+    }
+
+    .form-control.error textarea {
+      border-color: #ff3860;
+    }
+
+    .form-submit {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .btn-style {
+        font-size: 14px;
+        color: $color-white;
+        background-color: $color-planetarium;
+        padding: 21px;
+      }
+    }
+
+    .payment-block {
+      font-size: 14px;
+
+      .payment-subtitle {
+        color: $color-lunar;
+      }
+
+      .payment-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $color-satin_white;
+        border-radius: 5px;
+        padding-top: 25px;
+
+        .icon-error_card {
+          background-image: url("../img/error_card.svg");
+          background-repeat: no-repeat;
+          width: 64px;
+          height: 64px;
+        }
+      }
+
+      .flex-end {
+        display: flex;
+        justify-content: flex-end;
+        margin: 2rem 0;
+      }
+    }
+
+    a {
+      color: $color-planetarium;
+
+      .icon-content {
+        content: url("../img/left_backup.svg");
+        filter: invert(10%) sepia(84%) saturate(5320%) hue-rotate(225deg) brightness(94%) contrast(91%);
+        display: inline-block;
+        height: 14px;
+        width: 14px;
+        vertical-align: text-top;
+        margin-right: 7px;
+      }
+
+      span {
+        font-size: 14px
+      }
+    }
+
+    #payment-info.active-block, #block-review.active-block {
+      display: none;
+    }
+  }
+
+  .block-review {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 15px 25px 0 25px;
+
+    .review-info {
+      display: flex;
+      flex: 1 100%;
+      flex-wrap: wrap;
+
+      .width-item {
+        width: 15%;
+        @media only screen and (max-width: 62em) {
+          width: 25%;
+        }
+      }
+
+      .text-style {
+        color: $color-black;
+      }
+    }
+
+    a {
+      &:is(:hover, :focus, :active) {
+        color: $color-planetarium;
+      }
+
+      .link-point {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .footer {
+    display: grid;
+    align-content: center;
+    font-size: 13px;
+    color: $color-lunar;
+    grid-area: footer;
+    margin: 0 5rem 1rem 5rem;
+    border-top: 1px solid $color-lunar;
+
+    @media only screen and (max-width: 62em) {
+      margin: 1.5rem 5rem 0 5rem;
+    }
+
+    @media only screen and (max-width: 32em) {
+      margin: 1.5rem 1rem;
+    }
+  }
+}

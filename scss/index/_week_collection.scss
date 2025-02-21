@@ -1,0 +1,123 @@
+@import "../helpers/placeholder";
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 'one two three four';
+  justify-content: space-between;
+
+  @media only screen and (max-width: 82em) {
+    grid-template-areas: 'one two' 'three four';
+    grid-row-gap: 2rem;
+    justify-content: space-around;
+  }
+
+  @media only screen and (max-width: 42em) {
+    grid-template-areas: 'one' 'two' 'three' 'four';
+    justify-items: center;
+    padding: 0 1rem;
+  }
+
+  @media only screen and (max-width: 23em) {
+    justify-content: space-around;
+  }
+
+  .grid-area:nth-child(1) {
+    grid-area: one;
+  }
+
+  .grid-area:nth-child(2) {
+    grid-area: two;
+    justify-items: end;
+  }
+
+  .grid-area:nth-child(3) {
+    grid-area: three;
+  }
+
+  .grid-area:nth-child(4) {
+    grid-area: four;
+  }
+
+  .grid-area {
+    position: relative;
+
+    .blocks-position {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .img-style {
+        width: 330px;
+        height: 330px;
+        object-fit: contain;
+      }
+
+      .flex-links {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 15px;
+        gap: 10px;
+        margin-bottom: 15px;
+
+        .icon-button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 45px;
+          height: 45px;
+          background-color: $color-white;
+          cursor: pointer;
+          @extend %button;
+
+          .icon-bag {
+            background-image: url("../img/bag.svg");
+            @extend .style-icon;
+          }
+
+          .icon-like {
+            background-image: url("../img/like.svg");
+            @extend .style-icon;
+          }
+        }
+      }
+
+      .info-container {
+        width: 100%;
+        @media only screen and (max-width: 30em) {
+          width: 355px;
+        }
+
+        .flex-stars {
+          display: flex;
+          justify-content: center;
+          margin-top: 15px;
+
+          .icon-star {
+            background-image: url("../img/star.svg");
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+#week-collection, #hot-list {
+  position: relative;
+  min-height: 450px;
+}
+
+#all-products {
+  position: relative;
+  min-height: 1270px;
+}
+
+#product-description_item {
+  position: relative;
+  min-height: 1000px;
+}

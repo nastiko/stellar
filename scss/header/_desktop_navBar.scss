@@ -1,0 +1,92 @@
+@import '../helpers/variables';
+@import '../helpers/placeholder';
+
+.sticky {
+  background-color: $color-white;
+  border-bottom: 1px solid $color-placebo;
+
+  .desktop-device {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    @media only screen and (max-width: 100em) {
+      padding: 0 1rem;
+    }
+
+    .logo {
+      background: url("../img/logo.jpg") no-repeat center;
+      background-size: contain;
+      width: 150px;
+      height: 70px;
+    }
+
+    .style-list {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .categories {
+      .gap-list_categories {
+        @extend .style-list;
+        @include gap(50px);
+
+        .display-list_style {
+          color: #000;
+          font-size: 14px;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+
+          &:hover {
+            color: $color-sand;
+          }
+        }
+      }
+    }
+
+    .gap-list_icons {
+      @extend .style-list;
+      @include gap(20px);
+      cursor: pointer;
+    }
+
+    .nav-menu_mobile {
+      display: none;
+      @media only screen and (max-width: 50em) {
+        display: block !important;
+      }
+    }
+
+    .icon-person, .icon-like, .icon-bag {
+      @extend .style-icon;
+      cursor: pointer;
+    }
+
+    .icon-person {
+      background-image: url("../img/person.svg");
+    }
+
+    .icon-like {
+      background-image: url("../img/like.svg");
+      color: black;
+    }
+
+    .icon-bag {
+      background-image: url("../img/bag.svg");
+    }
+  }
+}
+
+.amount-item {
+  font-size: 11px;
+  background-color: $color-black;
+  color: $color-white;
+  border-radius: 50%;
+  position: relative;
+  top: -15px;
+  left: 17px;
+  padding: 2px 6px;
+}

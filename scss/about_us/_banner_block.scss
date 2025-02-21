@@ -1,0 +1,107 @@
+@import "../index/individual_names";
+@import "../helpers/placeholder";
+@import "../commonstyle/all_commonstyle";
+
+.banners-styles {
+  .row {
+    justify-content: space-between;
+
+    .banner-block {
+      width: 100%;
+
+      .banner-img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        transition: all .5s ease-in-out;
+        padding-bottom: 1rem;
+        cursor: pointer;
+
+        @media only screen and (max-width: 36em) {
+          padding: 0 1rem 1rem 1rem;
+        }
+      }
+
+      .banner-wrap_info {
+        padding-bottom: 1rem;
+
+        .info-banner {
+          padding: 0 1rem;
+        }
+      }
+    }
+
+    .wobble-horizontal {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: perspective(1px) translateZ(0);
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+
+      &:is(:hover, :focus, :active) {
+        -webkit-animation-name: wobble-horizontal;
+        animation-name: wobble-horizontal;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+      }
+    }
+
+    @keyframes wobble-horizontal {
+      16.65% {
+        -webkit-transform: translateX(8px);
+        transform: translateX(8px);
+      }
+      33.3% {
+        -webkit-transform: translateX(-6px);
+        transform: translateX(-6px);
+      }
+      49.95% {
+        -webkit-transform: translateX(4px);
+        transform: translateX(4px);
+      }
+      66.6% {
+        -webkit-transform: translateX(-2px);
+        transform: translateX(-2px);
+      }
+      83.25% {
+        -webkit-transform: translateX(1px);
+        transform: translateX(1px);
+      }
+      100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
+    }
+
+    @-webkit-keyframes wobble-horizontal {
+      16.65% {
+        -webkit-transform: translateX(8px);
+        transform: translateX(8px);
+      }
+      33.3% {
+        -webkit-transform: translateX(-6px);
+        transform: translateX(-6px);
+      }
+      49.95% {
+        -webkit-transform: translateX(4px);
+        transform: translateX(4px);
+      }
+      66.6% {
+        -webkit-transform: translateX(-2px);
+        transform: translateX(-2px);
+      }
+      83.25% {
+        -webkit-transform: translateX(1px);
+        transform: translateX(1px);
+      }
+      100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
+    }
+  }
+}

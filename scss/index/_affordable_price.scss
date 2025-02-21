@@ -1,0 +1,20 @@
+@import "../helpers/variables";
+@import "../helpers/placeholder";
+
+.title-info {
+  font-family: "Cormorant Garamond", serif;
+  font-size: $space-48_24;
+  @include font-weight(heavy);
+  margin-top: 40px;
+}
+
+.img-rock {
+  height: 497px;
+  background-image: url("../img/banner_8.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @media only screen and (max-width: 50em) {
+    height: 316px;
+  }
+}

@@ -1,0 +1,27 @@
+@import "../helpers/variables";
+
+.alphabetically-dropdown {
+  height: 37px;
+  border: none;
+  font-size: 15px;
+  background-color: $color-jupiter;
+  padding: 0 20px 0 15px;
+}
+
+.dropdown-toggle::after {
+  margin-left: 10px;
+}
+
+.dropdown-menu {
+  width: 100%;
+  border-radius: 0;
+
+  .dropdown-item {
+    font-size: 1rem;
+  }
+
+  .dropdown-item:is(:focus, :hover) {
+    background-color: $color-jupiter;
+    color: $color-black;
+  }
+}

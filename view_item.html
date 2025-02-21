@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Lato:wght@300;400;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/libraries/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/view_item.css">
+    <title>View Item</title>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+</head>
+<body>
+<header class="sticky-top sticky">
+    <nav class="desktop-device width-container">
+        <div class="nav-menu_mobile" data-bs-toggle="offcanvas" data-bs-target="#nav-menu_mobile">
+            <div class="icon-menu"></div>
+        </div>
+        <div class="offcanvas offcanvas-start" id="nav-menu_mobile">
+            <div class="offcanvas-header">
+                <h1 class="offcanvas-title">Close</h1>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul>
+                    <li><a class="offcanvas-list" href="products.html">Jewellery</a></li>
+                    <li>
+                        <hr>
+                    </li>
+                    <li><a class="offcanvas-list" href="products.html">Sale</a></li>
+                    <li>
+                        <hr>
+                    </li>
+                    <li><a class="offcanvas-list" href="about_us.html">Blog</a></li>
+                    <li>
+                        <hr>
+                    </li>
+                    <li><a class="offcanvas-list" href="about_us.html">About Us</a></li>
+                    <li>
+                        <hr>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <a href="index.html" class="logo"></a>
+        <div class="categories display-none_mobile">
+            <ul class="gap-list_categories">
+                <li><a class="display-list_style" href="products.html">Jewellery</a></li>
+                <li><a class="display-list_style" href="products.html">Sale</a></li>
+                <li><a class="display-list_style" href="about_us.html">Blog</a></li>
+                <li><a class="display-list_style" href="about_us.html">About Us</a></li>
+            </ul>
+        </div>
+        <div>
+            <div class="gap-list_icons">
+                <div class="icon-person display-none_mobile"></div>
+                <div class="icon-like display-none_mobile"></div>
+                <div class="icon-bag me-3" id="cart_button" type="button" data-bs-toggle="offcanvas" data-bs-target="#cart">
+                    <span id="total-qty" class="amount-item">0</span>
+                </div>
+                <div class="offcanvas offcanvas-end" id="cart">
+                    <div class="offcanvas-header">
+                        <h1 class="offcanvas-title">Your cart</h1>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <p id="cart-empty">Your basket is empty</p>
+                        <!--render product in cart here-->
+                    </div>
+                    <div class="offcanvas-footer">
+                        <ul class="flex-icon_container">
+                            <li class="bg-circle" data-bs-toggle="tooltip" title="Order Note">
+                                <a class="icon-calendar"></a>
+                            </li>
+                            <li class="bg-circle" data-bs-toggle="tooltip" title="Add A Coupon">
+                                <a class="icon-percent"></a>
+                            </li>
+                            <li class="bg-circle" data-bs-toggle="tooltip" title="Estimate Shipping">
+                                <a class="icon-delivery"></a>
+                            </li>
+                        </ul>
+                        <hr>
+                        <div class="total-box">
+                            <p class="total-item">Subtotal:</p>
+                            <p id="subtotal" class="total-price">£100</p>
+                        </div>
+                        <p class="info-taxes">Taxes and shipping calculated at checkout</p>
+                        <button class="button-banners">
+                            <a class="link-style" href="checkout.html" type="submit">Check Out</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<hr class="m-0">
+<main id="product-description_item">
+    <section class="width-container">
+        <div class="row wrap-flex_container">
+            <div class="col-xl-5 col-lg-7 col-md-10 col-12 flex-wrap_imgs">
+                <div class="foundation-img">
+                    <img class="show-img" data-image="featured"
+                         src=""
+                         alt=""
+                         id="product-image">
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-5 col-md-10 col-12 flex-wrap_info">
+                <div class="location-item">
+                    <p class="page-highlighter">
+                        <a class="prev-link" href="index.html">Home</a>
+                        <span class="arrow-backup"></span>
+                        <a class="prev-link" href="index.html">Bracelets</a>
+                        <span class="arrow-backup"></span>
+                        <a class="text-body">Twin Hoops</a>
+                    </p>
+                </div>
+                <div class="flex-stars justify-content-start">
+                    <span class="icon-star"></span>
+                    <span class="icon-star"></span>
+                    <span class="icon-star"></span>
+                    <span class="icon-star"></span>
+                    <span class="icon-star"></span>
+                </div>
+                <div class="flex-product_info">
+                    <h3 class="product-name text-start" id="product-title">Croissant Dome Hoops</h3>
+                    <p class="product-price text-start">£<span id="product-price">0</span></p>
+                </div>
+                <hr>
+                <div class="description">
+                    <p id="product-short-description">Text</p>
+                    <p>
+                        This product is available.
+                    </p>
+                    <h3 class="title-block">Color</h3>
+                    <div class="extra-imgs" id="product-preview">
+                        <img class="sample-img active"
+                             src=""
+                             data-image=""
+                             alt="">
+                    </div>
+                    <a class="link-popup">Size Guide</a>
+                    <div class="popup">
+                        <button class="popup-close_icon">
+                            <span class="icon-close"></span>
+                        </button>
+                        <div class="content">
+                            <img class="img-size_guide" src="img/size_guide.webp" alt="Size Guide">
+                        </div>
+                    </div>
+                    <div class="add-cart my-4">
+                        <div class="add-remove_item">
+                            <button class="p-0">
+                                <span class="icon-minus"></span>
+                            </button>
+                            <strong class="m-0 amount-items">1</strong>
+                            <button class="p-0">
+                                <span class="icon-plus"></span>
+                            </button>
+                        </div>
+                        <button>Add to cart</button>
+                        <div class="icon-button border border-secondary" data-bs-toggle="tooltip" title="Wishlist">
+                            <div class="icon-like">
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-buy_now">Buy it now</button>
+                    <hr class="my-4">
+                    <p>ID:
+                        <span class="highlight-text">D11111</span>
+                    </p>
+                    <p>Categories:
+                        <span class="highlight-text" id="product-category">Text</span>
+                    </p>
+                    <p>Tags:
+                        <span class="highlight-text">Hot, Women</span>
+                    </p>
+                    <p>Share:
+                        <a class="icon-facebook me-2"></a>
+                        <a class="icon-twitter"></a>
+                    </p>
+                    <div class="my-4">
+                        <div class="description-info">
+                            <button class="btn-description_info border-bottom" type="button">Description
+                                <span class="icon"></span>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="accordion-answer_inner" id="product-description">Text</div>
+                            </div>
+                        </div>
+                        <div class="description-info">
+                            <button class="btn-description_info border-bottom" type="button">Shipping
+                                <span class="icon"></span>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="accordion-answer_inner">
+                                    <p>
+                                        For orders placed before 7am AEDT, we endeavour to process the same business
+                                        day. Orders placed after 11am AEDT will be processed the next business day.
+                                        During sale events and new collection launches, there may be a slighly longer
+                                        processing time. All Auguste orders are hand-picked and packed with love from
+                                        Poole, Dorset.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description-info">
+                            <button class="btn-description_info border-bottom" type="button">Review
+                                <span class="icon"></span>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="accordion-answer_inner">
+                                    <p class="my-3">No reviews yet</p>
+                                    <button class="btn-review">
+                                        <span></span>
+                                        Write review
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid block-may_like">
+        <div class="width-container">
+            <h5 class="title-header">You may Also Like</h5>
+            <div id="may-list"></div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="container-fluid border-style py-5 px-0">
+        <div class="width-container">
+            <div class="grid-footer_container">
+                <div class="grid-item">
+                    <h3 class="title-text text-1">Customer Services</h3>
+                    <ul>
+                        <li class="option-point"><a class="info-banner" href="#">Contact Us</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Track Your Order</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Product Care & Repair</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Book an Appointment</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Frequently Asked Questions</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Shipping & Returns</a></li>
+                    </ul>
+                </div>
+                <div class="grid-item">
+                    <h3 class="title-text text-1">About Us</h3>
+                    <ul>
+                        <li class="option-point"><a class="info-banner" href="#">About Us</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">FAQ</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Our Producers</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Sitemap</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Terms & Conditions</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="grid-item">
+                    <h3 class="title-text text-1">Catalog</h3>
+                    <ul>
+                        <li class="option-point"><a class="info-banner" href="#">Earrings</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Necklaces</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Bracelets</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Rings</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Jewelry Box</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Studs</a></li>
+                    </ul>
+                </div>
+                <div class="grid-item">
+                    <h3 class="title-text text-1">Our Newsletter</h3>
+                    <p class="info-banner m-0">Sign up for the latest Ice offers and exclusives.</p>
+                    <form action="#" class="my-3">
+                        <div class="form-icon_container">
+                            <input class="input-style" type="email" name="email" placeholder="Your email" required>
+                            <button class="button-style" type="submit">
+                                <span class="icon-email"></span>
+                            </button>
+                        </div>
+                    </form>
+                    <ul class="flex-icon_container">
+                        <li class="bg-circle">
+                            <a class="icon-facebook" href="https://en-gb.facebook.com/"
+                               target="_blank"></a>
+                        </li>
+                        <li class="bg-circle">
+                            <a class="icon-twitter" href="https://twitter.com/i/flow/login"
+                               target="_blank"></a>
+                        </li>
+                        <li class="bg-circle">
+                            <a class="icon-instagram" href="https://www.instagram.com/"
+                               target="_blank"></a>
+                        </li>
+                        <li class="bg-circle">
+                            <a class="icon-youtube" href="https://www.youtube.com/"
+                               target="_blank"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<hr class="m-0">
+<footer>
+    <div class="container-fluid px-0">
+        <div class="width-container">
+            <div class="flex-footer_container">
+                <div>
+                    <p class="info-banner m-0">Copyright © 2024 Anastasia Hrynkevich</p>
+                </div>
+                <div class="img-payment"></div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div id="up-click" class="bg-scroll_up">
+    <button class="up-icon"></button>
+</div>
+<script src="js/main.js"></script>
+<script src="js/view-item.js"></script>
+<script src="js/countdown.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/loader.js"></script>
+<script>
+
+    let product = new Product();
+    let utils = new Utilities();
+    let productInfo = new ProductInfo('.description');
+    let sizeGuide = new PopUp('div.popup', '.popup-close_icon', '.link-popup');
+    let showDiffStyle = new ShowDiffStyle('sample-img', 'active', '[data-image="featured"]');
+    let mayLikeList = new Products('#may-list', 4, 0, 'Bronze', 'hot');
+    Cart.renderCart();
+
+    product.updateProductPageData(showDiffStyle);
+    mayLikeList.renderProducts();
+
+    utils.scrollUp();
+    productInfo.init();
+    sizeGuide.init();
+</script>
+</body>
+</html>

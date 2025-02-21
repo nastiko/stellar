@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Lato:wght@300;400;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/libraries/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/products.css">
+    <title>Products</title>
+    <script src="js/bootstrap/bootstrap.bundle.js"></script>
+</head>
+<body>
+<header class="sticky-top sticky">
+    <nav class="desktop-device width-container">
+        <div class="nav-menu_mobile" data-bs-toggle="offcanvas" data-bs-target="#nav-menu_mobile">
+            <div class="icon-menu"></div>
+        </div>
+        <div class="offcanvas offcanvas-start" id="nav-menu_mobile">
+            <div class="offcanvas-header">
+                <h1 class="offcanvas-title">Close</h1>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul>
+                    <li><a class="offcanvas-list" href="products.html">Jewellery</a></li>
+                    <li>
+                        <hr>
+                    </li>
+                    <li><a class="offcanvas-list" href="products.html">Sale</a></li>
+                    <li>
+                        <hr>
+                    </li>
+                    <li><a class="offcanvas-list" href="about_us.html">Blog</a></li>
+                    <li>
+                        <hr>
+                    </li>
+                    <li><a class="offcanvas-list" href="about_us.html">About Us</a></li>
+                    <li>
+                        <hr>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <a href="index.html" class="logo"></a>
+        <div class="categories display-none_mobile">
+            <ul class="gap-list_categories">
+                <li><a class="display-list_style" href="products.html">Jewellery</a></li>
+                <li><a class="display-list_style" href="products.html">Sale</a></li>
+                <li><a class="display-list_style" href="about_us.html">Blog</a></li>
+                <li><a class="display-list_style" href="about_us.html">About Us</a></li>
+            </ul>
+        </div>
+        <div>
+            <div class="gap-list_icons">
+                <div class="icon-person display-none_mobile"></div>
+                <div class="icon-like display-none_mobile"></div>
+                <div class="icon-bag me-3" id="cart_button" type="button" data-bs-toggle="offcanvas" data-bs-target="#cart">
+                    <span id="total-qty" class="amount-item">0</span>
+                </div>
+                <div class="offcanvas offcanvas-end" id="cart">
+                    <div class="offcanvas-header">
+                        <h1 class="offcanvas-title">Your cart</h1>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <p id="cart-empty">Your basket is empty</p>
+                        <!--render product in cart here-->
+                    </div>
+                    <div class="offcanvas-footer">
+                        <ul class="flex-icon_container">
+                            <li class="bg-circle" data-bs-toggle="tooltip" title="Order Note">
+                                <a class="icon-calendar"></a>
+                            </li>
+                            <li class="bg-circle" data-bs-toggle="tooltip" title="Add A Coupon">
+                                <a class="icon-percent"></a>
+                            </li>
+                            <li class="bg-circle" data-bs-toggle="tooltip" title="Estimate Shipping">
+                                <a class="icon-delivery"></a>
+                            </li>
+                        </ul>
+                        <hr>
+                        <div class="total-box">
+                            <p class="total-item">Subtotal:</p>
+                            <p id="subtotal" class="total-price">£0</p>
+                        </div>
+                        <p class="info-taxes">Taxes and shipping calculated at checkout</p>
+                        <button class="button-banners">
+                            <a class="link-style" href="checkout.html" type="submit">Check Out</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="container-fluid bg-title_section position-relative mb-5">
+        <div class="container-fluid inside-text flex-column">
+            <div class="container text-center page-title">
+                <h1 class="large-header h1-style">Products</h1>
+                <p class="page-highlighter">
+                    <a class="prev-link" href="index.html">Home</a>
+                    <span class="arrow-backup"></span>
+                    <a>Products</a>
+                </p>
+            </div>
+            <div class="container items-collection">
+                <div class="block-item">
+                    <img class="img-item" src="img/slider_5.webp" alt="Earrings">
+                    <h6>
+                        <a class="title-item_style" href="#">Earrings</a>
+                    </h6>
+                </div>
+                <div class="block-item">
+                    <img class="img-item" src="img/slider_6.webp" alt="Necklaces">
+                    <h6>
+                        <a class="title-item_style" href="#">Necklaces</a>
+                    </h6>
+                </div>
+                <div class="block-item">
+                    <img class="img-item" src="img/slider_9.webp" alt="Bracelets">
+                    <h6>
+                        <a class="title-item_style" href="#">Bracelets</a>
+                    </h6>
+                </div>
+                <div class="block-item">
+                    <img class="img-item" src="img/slider_8.jpg" alt="Wedding & Bridal">
+                    <h6>
+                        <a class="title-item_style" href="#">Rings</a>
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid">
+        <div class="width-container">
+            <nav class="position-nav_filter mb-5">
+                <div class="filter-container">
+                    <div class="icon-filter" data-bs-toggle="offcanvas" data-bs-target="#filter"></div>
+                    <div class="offcanvas offcanvas-start <!--show-->" id="filter">
+                        <div class="offcanvas-header mt-3 pb-0">
+                            <h3 class="offcanvas-title">Collections</h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                        </div>
+                        <div id="count-items_categories" class="offcanvas-body pt-0">
+                            <ul class="block-list_style mb-5">
+                                <li class="flex-list_style" data-category="Earrings">
+                                    <span>Earrings</span>
+                                    <span class="count count-earrings">0</span>
+                                </li>
+                                <li class="flex-list_style" data-category="Necklaces">
+                                    <span>Necklaces</span>
+                                    <span class="count count-necklaces">0</span>
+                                </li>
+                                <li class="flex-list_style" data-category="Bracelets">
+                                    <span>Bracelets</span>
+                                    <span class="count count-bracelets">0</span>
+                                </li>
+                                <li class="flex-list_style" data-category="Rings">
+                                    <span>Rings</span>
+                                    <span class="count count-rings">0</span>
+                                </li>
+                            </ul>
+                            <div class="mb-5">
+                                <h3 class="offcanvas-title">Availability</h3>
+                                <div class="block-list_style flex-list_style">
+                                    <div>
+                                        <input class="me-1" type="checkbox">
+                                        <span>In stock</span>
+                                    </div>
+                                    <span class="count count-in_stock">0</span>
+                                </div>
+                                <div class="block-list_style flex-list_style not-allowed disabled">
+                                    <div>
+                                        <input class="me-1 not-allowed" type="checkbox" disabled>
+                                        <span><del>Out of stock</del></span>
+                                    </div>
+                                    <span class="count"><del>0</del></span>
+                                </div>
+                            </div>
+                            <div class="mb-5">
+                                <h3 class="offcanvas-title">Price</h3>
+                                <div class="flex-slider_price price-input mb-4">
+                                    <div class="field">
+                                        <span class="field-icon_style">£</span>
+                                        <input id="min-value" class="input-type_number" type="number" value="50" min="0"
+                                               max="350">
+                                    </div>
+                                    <label>To</label>
+                                    <div class="field">
+                                        <span class="field-icon_style">£</span>
+                                        <input class="input-type_number max-value" type="number" value="550" min="0"
+                                               max="550">
+                                    </div>
+                                </div>
+                                <div class="slider">
+                                    <div class="progress"></div>
+                                </div>
+                                <div id="range-input" class="range-input">
+                                    <input type="range" class="range-min" min="0" max="550" value="50" step="10">
+                                    <input type="range" class="range-max" min="0" max="550" value="550" step="10">
+                                </div>
+                            </div>
+                            <div class="mb-5">
+                                <h3 class="offcanvas-title">Color</h3>
+                                <div class="block-color_wrap">
+                                    <div class="filter-color color-antique not-allowed disabled"
+                                         data-bs-toggle="tooltip"
+                                         title="Antique">
+                                    </div>
+                                    <div class="filter-color color-bone not-allowed disabled" data-bs-toggle="tooltip"
+                                         title="Bone"></div>
+                                    <div class="filter-color color-chestnut not-allowed disabled"
+                                         data-bs-toggle="tooltip"
+                                         title="Chestnut"></div>
+                                    <div class="filter-color color-eggshell not-allowed disabled"
+                                         data-bs-toggle="tooltip"
+                                         title="Eggshell"></div>
+                                    <div class="filter-color color-gadien not-allowed disabled" data-bs-toggle="tooltip"
+                                         title="Gadien"></div>
+                                    <div class="filter-color color-grullo not-allowed disabled" data-bs-toggle="tooltip"
+                                         title="Grullo"></div>
+                                    <div class="filter-color color-pinetree not-allowed disabled"
+                                         data-bs-toggle="tooltip"
+                                         title="PineTree"></div>
+                                </div>
+                            </div>
+                            <div class="mb-5">
+                                <h3 class="offcanvas-title">Size</h3>
+                                <button class="block-sizes not-allowed disabled">S</button>
+                                <button class="block-sizes not-allowed disabled">X</button>
+                                <button class="block-sizes not-allowed disabled">XL</button>
+                            </div>
+                            <div>
+                                <h3 class="offcanvas-title">Feature Product</h3>
+                                <div class="block-feature_product mb-4">
+                                    <img class="block-feature_img" src="img/earrings_6.webp" alt="Hold Hoops">
+                                    <ul class="ms-4">
+                                        <li class="block-feature_star">
+                                            <span class="icon-feature_star"></span>
+                                            <span class="icon-feature_star"></span>
+                                            <span class="icon-feature_star"></span>
+                                            <span class="icon-feature_star"></span>
+                                            <span class="icon-feature_star"></span>
+                                        </li>
+                                        <li class="product-name block-feature_name"><a href="#">Bold Hoops</a></li>
+                                        <li class="product-price block-feature_-price">£120</li>
+                                    </ul>
+                                </div>
+                                <div class="block-feature_product mb-4">
+                                    <img class="block-feature_img" src="img/earrings_2.webp" alt="Hold Hoops">
+                                    <ul class="ms-4">
+                                        <li class="block-feature_star">
+                                            <span class="icon-feature_star"></span>
+                                            <span class="icon-feature_star"></span>
+                                            <span class="icon-feature_star"></span>
+                                            <span class="icon-feature_star"></span>
+                                            <span class="icon-feature_star"></span>
+                                        </li>
+                                        <li class="product-name block-feature_name"><a href="#">Oversized Thin Hoops</a>
+                                        </li>
+                                        <li class="product-price block-feature_-price">£120</li>
+                                    </ul>
+                                </div>
+                                <div class="block-feature_product">
+                                    <img class="block-feature_img" src="img/earrings_1.webp" alt="Hold Hoops">
+                                    <ul class="ms-4">
+                                        <li class="block-feature_star">
+                                            <span class="icon-feature_star"></span>
+                                            <span class="icon-feature_star"></span>
+                                            <span class="icon-feature_star"></span>
+                                            <span class="icon-feature_star"></span>
+                                            <span class="icon-feature_star"></span>
+                                        </li>
+                                        <li class="product-name block-feature_name"><a href="#">Medium Flat Hoops</a>
+                                        </li>
+                                        <li class="product-price block-feature_-price">£120</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="alphabetically-dropdown dropdown-toggle" data-bs-toggle="dropdown" type="button">
+                            Alphabetically, A-Z
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Alphabetically, A-Z</a></li>
+                            <li><a class="dropdown-item" href="#">Alphabetically, Z-A</a></li>
+                            <li><a class="dropdown-item" href="#">Price, Low to High</a></li>
+                            <li><a class="dropdown-item" href="#">Price, High to Low</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grids-block_style">
+                    <ul class="grids-icon_position">
+                        <li class="icon-grid_3x3"></li>
+                        <li class="vertical-line"></li>
+                        <li class="icon-grid_4x3"></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="px-0 mb-5" id="all-products">
+            </div>
+            <div class="pagination-position">
+                <div class="pagination">
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="container-fluid border-style py-5 px-0">
+        <div class="width-container">
+            <div class="grid-footer_container">
+                <div class="grid-item">
+                    <h3 class="title-text text-1">Customer Services</h3>
+                    <ul>
+                        <li class="option-point"><a class="info-banner" href="#">Contact Us</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Track Your Order</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Product Care & Repair</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Book an Appointment</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Frequently Asked Questions</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Shipping & Returns</a></li>
+                    </ul>
+                </div>
+                <div class="grid-item">
+                    <h3 class="title-text text-1">About Us</h3>
+                    <ul>
+                        <li class="option-point"><a class="info-banner" href="#">About Us</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">FAQ</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Our Producers</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Sitemap</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Terms & Conditions</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="grid-item">
+                    <h3 class="title-text text-1">Catalog</h3>
+                    <ul>
+                        <li class="option-point"><a class="info-banner" href="#">Earrings</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Necklaces</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Bracelets</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Rings</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Jewelry Box</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Studs</a></li>
+                    </ul>
+                </div>
+                <div class="grid-item">
+                    <h3 class="title-text text-1">Our Newsletter</h3>
+                    <p class="info-banner m-0">Sign up for the latest Ice offers and exclusives.</p>
+                    <form action="#" class="my-3">
+                        <div class="form-icon_container">
+                            <input class="input-style" type="email" name="email" placeholder="Your email" required>
+                            <button class="button-style" type="submit">
+                                <span class="icon-email"></span>
+                            </button>
+                        </div>
+                    </form>
+                    <ul class="flex-icon_container">
+                        <li class="bg-circle">
+                            <a class="icon-facebook" href="https://en-gb.facebook.com/"
+                               target="_blank"></a>
+                        </li>
+                        <li class="bg-circle">
+                            <a class="icon-twitter" href="https://twitter.com/i/flow/login"
+                               target="_blank"></a>
+                        </li>
+                        <li class="bg-circle">
+                            <a class="icon-instagram" href="https://www.instagram.com/"
+                               target="_blank"></a>
+                        </li>
+                        <li class="bg-circle">
+                            <a class="icon-youtube" href="https://www.youtube.com/"
+                               target="_blank"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<hr class="m-0">
+<footer>
+    <div class="container-fluid px-0">
+        <div class="width-container">
+            <div class="flex-footer_container">
+                <div>
+                    <p class="info-banner m-0">Copyright © 2024 Anastasia Hrynkevich</p>
+                </div>
+                <div class="img-payment"></div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div id="up-click" class="bg-scroll_up">
+    <button class="up-icon"></button>
+</div>
+</body>
+
+<script src="js/main.js"></script>
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/loader.js"></script>
+<script>
+    let utils = new Utilities();
+    let slideRange = new SlideRange();
+    let products = new Products('#all-products', 12, 0, false);
+    let filter = new Filter('count-items_categories');
+    Cart.renderCart();
+
+    utils.scrollUp();
+    slideRange.init('#range-input input', '.slider .progress', '.price-input input');
+    products.renderProducts();
+    products.addPaginationNumbers();
+    filter.renderCountProducts1();
+</script>
+</html>

@@ -1,0 +1,70 @@
+@import "../helpers/variables";
+@import "../helpers/placeholder";
+
+.bg-section_explore {
+  background-image: url("../img/bg_line.webp");
+  padding-bottom: 4rem;
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    justify-items: center;
+    gap: 2rem;
+
+    .grid-area {
+      position: relative;
+    }
+  }
+}
+
+.categories-button {
+  width: 100%;
+  line-height: 35px;
+  letter-spacing: 0;
+  background-color: $color-white;
+  border: none;
+  position: absolute;
+  bottom: -15px;
+  padding: 5px 0;
+  @extend %button;
+
+  .link-style {
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    color: $color-black;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  &:hover {
+    background-color: $color-sand;
+  }
+}
+
+.bracelets {
+  background-image: url("../img/banner_1.webp");
+  @extend .img-block;
+}
+
+.charms {
+  background-image: url("../img/banner_2.webp");
+  @extend .img-block;
+}
+
+.earrings {
+  background-image: url("../img/banner_3.webp");
+  @extend .img-block;
+}
+
+.necklaces {
+  background-image: url("../img/banner_4.webp");
+  @extend .img-block;
+}
+
+.rings {
+  background-image: url("../img/banner_5.webp");
+  @extend .img-block;
+}

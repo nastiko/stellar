@@ -1,0 +1,78 @@
+@import "../helpers/variables";
+
+.popup {
+  max-width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+  z-index: 2000;
+  visibility: hidden;
+  opacity: 0;
+
+  &:before {
+    position: fixed;
+    content: "";
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, .5);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99990;
+  }
+
+  @media only screen and (max-width: 62em) {
+    max-width: 80vw;
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 30em) {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .content{
+    z-index: 99991;
+    position: relative;
+
+    .img-size_guide {
+      width: 100%;
+      max-height: 70vh;
+    }
+  }
+
+  .popup-close_icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $color-beluga;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 99992;
+
+    &:hover {
+      background-color: $color-sand;
+      border: none;
+    }
+
+    .icon-close {
+      content: url("../img/close.svg");
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      vertical-align: middle;
+      margin: -3px 0px 0 1px;
+    }
+  }
+
+}
+
+.popup.active {
+  visibility: visible;
+  opacity: 1;
+}

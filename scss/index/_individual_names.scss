@@ -1,0 +1,43 @@
+@import "../helpers/variables";
+@import "../helpers/placeholder";
+
+
+.utilities {
+  justify-content: space-around;
+
+  .padding-img {
+    padding: 0 0.4rem;
+  }
+}
+
+.img-magic {
+  width: 100%;
+  background-image: url("../img/banner_6.webp");
+}
+
+.img-earrings {
+  background-image: url("../img/banner_7.webp");
+}
+
+.img-magic, .img-earrings {
+  width: 100%;
+  height: 376px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.banner-wrap_info {
+  max-width: 470px;
+  text-align: center;
+  margin: 0 auto;
+
+  .title-banner {
+    font-family: $font-cormorant;
+    font-size: 24px;
+    @include font-weight(heavy);
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    margin-top: 0;
+  }
+}

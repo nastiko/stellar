@@ -1,0 +1,108 @@
+@import '../helpers/variables';
+@import '../helpers/placeholder';
+
+//main styles for all blocks
+.style-text {
+  text-align: center;
+  text-transform: uppercase;
+  @include font-weight(heavy);
+}
+
+//link-style inside block or btn
+
+.button-banners {
+  background-color: $color-white;
+  line-height: 35px;
+  border: 1px solid $color-black;
+  @extend %button;
+}
+
+.link-style {
+  width: 100%;
+  display: block;
+  color: $color-black;
+  padding: 0 25px;
+
+  &:hover {
+    color: $color-white;
+  }
+}
+
+.header-style {
+  font-family: $font-cormorant;
+  font-size: $space-40;
+  text-transform: none;
+  @extend .style-text;
+  filter: unset;
+  padding-bottom: 30px;
+}
+
+.info-banner {
+  font-size: 14px;
+  color: $color-lunar;
+  margin-bottom: 20px;
+}
+
+.product-name {
+  @extend .style-text;
+  margin: 0 0 3px;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  line-height: 16px;
+
+  &:hover {
+    color: $color-sand;
+  }
+}
+
+.product-price {
+  @extend .style-text;
+  color: $color-sand;
+  margin-bottom: 0.5rem;
+}
+
+.img-block {
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right;
+  width: 273px;
+  height: 376px;
+  position: relative;
+}
+
+.width-container {
+  @extend %wrap-container;
+}
+
+.highlight-text {
+  font-size: 14px;
+  @include font-weight(medium);
+  @extend .style-text;
+}
+
+.large-header {
+  line-height: 1.2;
+  @include font-weight(medium)
+}
+
+.style-icon {
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.guarantee-icon {
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+// @media query
+@media only screen and (max-width: 60em) {
+  .border-style {
+    margin-top: 0 !important;
+  }
+}

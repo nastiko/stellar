@@ -1,0 +1,139 @@
+@import "../helpers/variables";
+@import "../helpers/placeholder";
+
+.grid-footer_container {
+  display: grid;
+  grid-template-areas: 'one two three four';
+  justify-content: space-between;
+
+
+  @media only screen and (max-width: 48em) {
+    grid-template-areas: 'one two' 'three four';
+    grid-row-gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  @media only screen and (max-width: 30em) {
+    grid-template-areas: 'one' 'two' 'three' 'four';
+  }
+}
+
+.grid-item:nth-child(1) {
+  grid-area: one;
+}
+
+.grid-item:nth-child(2) {
+  grid-area: two;
+}
+
+.grid-item:nth-child(3) {
+  grid-area: three;
+}
+
+.grid-item:nth-child(4) {
+  grid-area: four;
+}
+
+.option-point {
+  margin-bottom: 7px;
+}
+
+.title-text {
+  font-size: 14px;
+  font-family: $font-cormorant;
+  color: $color-black;
+  text-transform: uppercase;
+  @include font-weight(heavy);
+  margin-bottom: 20px;
+}
+
+.form-icon_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  .input-style {
+    width: 85%;
+    line-height: 20px;
+    font-family: $font-lato;
+    font-size: 14px;
+    color: $color-lunar;
+    border: 1px solid $color-titanium;
+    border-radius: 0;
+    padding: 10px 20px;
+
+    &:focus {
+      outline: none !important;
+      border: 1px solid $color-black;
+    }
+  }
+
+  .button-style {
+    background-color: $color-black;
+    width: 51px;
+    height: 42px;
+    position: relative;
+
+    .icon-email {
+      background-image: url("../img/email.svg");
+      display: block;
+      @extend .style-icon;
+      margin: 0 auto;
+    }
+  }
+}
+
+.flex-icon_container {
+  display: flex;
+  gap: 20px;
+
+  .bg-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid $color-pinball;
+    border-radius: 50%;
+    cursor: pointer;
+
+    .icon-facebook, .icon-twitter, .icon-instagram, .icon-youtube {
+      width: 40px;
+      height: 40px;
+
+      &:after {
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        vertical-align: top;
+        margin: 11px;
+      }
+    }
+
+    &:hover {
+      background-color: $color-sand;
+
+      a:is(:hover, :active) {
+        filter: invert(100%) sepia(8%) saturate(503%) hue-rotate(281deg) brightness(117%) contrast(100%);
+      }
+    }
+  }
+}
+
+
+.icon-facebook:after {
+  content: url("../img/facebook.svg");
+}
+
+.icon-twitter:after {
+  content: url("../img/twitter.svg");
+}
+
+.icon-instagram:after {
+  content: url("../img/instagram.svg");
+}
+
+.icon-youtube:after {
+  content: url("../img/youtube.svg");
+}

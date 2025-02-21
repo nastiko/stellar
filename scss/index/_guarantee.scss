@@ -1,0 +1,41 @@
+@import "../helpers/placeholder";
+
+.bg-section_guarantee {
+  background-image: url("../img/line.webp");
+}
+
+.block-text_style {
+  width: 245px;
+  margin: 20px auto 0 auto;
+
+  .title-icon {
+    letter-spacing: 3px;
+    @include font-weight(meadium);
+    @extend .highlight-text;
+  }
+
+  .lorem-text {
+    font-size: 14px;
+    color: $color-lunar;
+    text-align: center;
+    margin-bottom: 0;
+    @media only screen and (max-width: 62em) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.icon-world {
+  background-image: url("../img/world.svg");
+  @extend .guarantee-icon;
+}
+
+.icon-return {
+  background-image: url("../img/return.svg");
+  @extend .guarantee-icon;
+}
+
+.icon-security {
+  background-image: url("../img/security.svg");
+  @extend .guarantee-icon;
+}

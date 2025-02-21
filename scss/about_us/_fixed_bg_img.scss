@@ -1,0 +1,38 @@
+@import "../index/full_page_slider";
+@import "../helpers/variables";
+
+.bg-img_fixed {
+  background-image: url("../img/bg-img_about.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+  height: 690px;
+
+  @media only screen and (max-width: 50em) {
+    height: 400px;
+  }
+
+  .h1-style {
+    font-size: $space-66;
+  }
+
+  .sub-title {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    @media only screen and (max-width: 50em) {
+      font-size: 13px;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      width: 80px;
+      color: white;
+      border-bottom: 1px solid $color-white;
+      margin: 20px auto;
+    }
+  }
+}

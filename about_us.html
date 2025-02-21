@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Lato:wght@300;400;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/libraries/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/about_us.css">
+    <title>About Us</title>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+</head>
+<body>
+<header class="sticky-top sticky">
+    <nav class="desktop-device width-container">
+        <div class="nav-menu_mobile" data-bs-toggle="offcanvas" data-bs-target="#nav-menu_mobile">
+            <div class="icon-menu"></div>
+        </div>
+        <div class="offcanvas offcanvas-start" id="nav-menu_mobile">
+            <div class="offcanvas-header">
+                <h1 class="offcanvas-title">Close</h1>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul>
+                    <li><a class="offcanvas-list" href="products.html">Jewellery</a></li>
+                    <li>
+                        <hr>
+                    </li>
+                    <li><a class="offcanvas-list" href="products.html">Sale</a></li>
+                    <li>
+                        <hr>
+                    </li>
+                    <li><a class="offcanvas-list" href="about_us.html">Blog</a></li>
+                    <li>
+                        <hr>
+                    </li>
+                    <li><a class="offcanvas-list" href="about_us.html">About Us</a></li>
+                    <li>
+                        <hr>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <a href="index.html" class="logo"></a>
+        <div class="categories display-none_mobile">
+            <ul class="gap-list_categories">
+                <li><a class="display-list_style" href="products.html">Jewellery</a></li>
+                <li><a class="display-list_style" href="products.html">Sale</a></li>
+                <li><a class="display-list_style" href="about_us.html">Blog</a></li>
+                <li><a class="display-list_style" href="about_us.html">About Us</a></li>
+            </ul>
+        </div>
+        <div>
+            <div class="gap-list_icons">
+                <div class="icon-person display-none_mobile"></div>
+                <div class="icon-like display-none_mobile"></div>
+                <div class="icon-bag me-3" id="cart_button" type="button" data-bs-toggle="offcanvas" data-bs-target="#cart">
+                    <span id="total-qty" class="amount-item">0</span>
+                </div>
+                <div class="offcanvas offcanvas-end" id="cart">
+                    <div class="offcanvas-header">
+                        <h1 class="offcanvas-title">Your cart</h1>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <p id="cart-empty">Your basket is empty</p>
+                        <!--render product in cart here-->
+                    </div>
+                    <div class="offcanvas-footer">
+                        <ul class="flex-icon_container">
+                            <li class="bg-circle" data-bs-toggle="tooltip" title="Order Note">
+                                <a class="icon-calendar"></a>
+                            </li>
+                            <li class="bg-circle" data-bs-toggle="tooltip" title="Add A Coupon">
+                                <a class="icon-percent"></a>
+                            </li>
+                            <li class="bg-circle" data-bs-toggle="tooltip" title="Estimate Shipping">
+                                <a class="icon-delivery"></a>
+                            </li>
+                        </ul>
+                        <hr>
+                        <div class="total-box">
+                            <p class="total-item">Subtotal:</p>
+                            <p id="subtotal" class="total-price">£100</p>
+                        </div>
+                        <p class="info-taxes">Taxes and shipping calculated at checkout</p>
+                        <button class="button-banners">
+                            <a class="link-style" href="checkout.html" type="submit">Check Out</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="container-fluid position-relative px-0">
+        <div class="bg-img_fixed">
+            <div class="container-fluid inside-text width-container">
+                <div class="container">
+                    <h1 class="large-header h1-style">Our Story</h1>
+                    <h4 class="sub-title">Stunning, Stylish and Within reach</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="width-container my-5">
+        <div class="banners-styles">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="banner-block">
+                        <img class="banner-img wobble-horizontal" src="img/banner_13.webp" alt="Lady in black dress">
+                        <div class="banner-wrap_info">
+                            <h3 class="title-banner">New // Earrings</h3>
+                            <p class="info-banner">Ut varius tincidunt libero. Nullam nulla eros, ultricies sit amet,
+                                nonummy idpede metus. Vestibulum dapibus nunc ac augue</p>
+                            <button class="button-banners">
+                                <a class="link-style">Read more</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="banner-block">
+                        <img class="banner-img wobble-horizontal" src="img/banner_15.jpg" alt="Butterfly">
+                        <div class="banner-wrap_info">
+                            <h3 class="title-banner">Jewellery Favourites</h3>
+                            <p class="info-banner">Ut varius tincidunt libero. Nullam nulla eros, ultricies sit amet,
+                                nonummy idpede metus. Vestibulum dapibus nunc ac augue</p>
+                            <button class="button-banners">
+                                <a class="link-style">Read more</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="banner-block">
+                        <img class="banner-img wobble-horizontal" src="img/banner_16.webp" alt="Lady with scarf">
+                        <div class="banner-wrap_info">
+                            <h3 class="title-banner">Awareness Bracelet</h3>
+                            <p class="info-banner">Ut varius tincidunt libero. Nullam nulla eros, ultricies sit amet,
+                                nonummy idpede metus. Vestibulum dapibus nunc ac augue</p>
+                            <button class="button-banners">
+                                <a class="link-style">Read more</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="width-container my-5">
+        <div class="where-began_block">
+            <div class="icon-diamond"></div>
+            <h3 class="header-style">Where it all began</h3>
+            <p class="info-banner">Aenean imperdiet. Proin viverra, ligula sit amet ultrices semper, ligula arcu
+                tristique sapien, a accumsan
+                nisi mauris ac eros. Vestibulum fringilla pede sit amet augue. Donec quam felis, ultricies nec,
+                pellentesque
+                eu, pretium quis, sem. Fusce fermentum odio nec arcu.Suspendisse faucibus, nunc et pellentesque egestas,
+                lacus ante convallis tellus, vitae iaculis lacus elit id tortor. Sed cursus turpis vitae tortor.
+                Vestibulum
+                eu odio. Sed in libero ut nibh placerat accumsan. Pellentesque habitant morbi tristique senectus et
+                netus et
+                malesuada fames ac turpis egestas.</p>
+        </div>
+
+    </section>
+    <section class="container-fluid position-relative px-0">
+        <div class="main-lookbook_block">
+            <img class="lookbook-img" src="img/bg_img_about_2.webp" alt="Woman with jewellery">
+            <div class="lookbook-card_item">
+                <div class="lookbook-btn">
+                    <span>1</span>
+                </div>
+                <div class="tooltip-item">
+                    <div class="lookbook-card_content">
+                        <div class="lookbook-card_img">
+                            <a href="view_item.html" target="_blank">
+                                <img src="img/bracelet.jpg"
+                                     alt="Ring transparent">
+                            </a>
+                        </div>
+                        <div class="info-container">
+                            <h3 class="product-name">
+                                <a href="view_item.html" target="_blank">Stunning Clover</a>
+                            </h3>
+                            <p class="product-price">£60</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lookbook-card_item">
+                <div class="lookbook-btn">
+                    <span>2</span>
+                </div>
+                <div class="tooltip-item">
+                    <div class="lookbook-card_content">
+                        <div class="lookbook-card_img">
+                            <a href="index.html" target="_blank">
+                                <img src="img/slider_1%5B800x700%5D.webp"
+                                     alt="Women with plants">
+                            </a>
+                        </div>
+                        <div class="font-style">
+                            <h3 class="name-banner">Discover our main page</h3>
+                            <a class="extra-info" href="index.html" target="_blank">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lookbook-card_item">
+                <div class="lookbook-btn">
+                    <span>3</span>
+                </div>
+                <div class="tooltip-item">
+                    <div class="lookbook-card_content">
+                        <div class="lookbook-card_img">
+                            <a href="products.html" target="_blank">
+                                <img src="img/slider_11%5B600x300%5D.webp"
+                                     alt="Jewellery with ribbon and rose">
+                            </a>
+                        </div>
+                        <div class="font-style">
+                            <h3 class="name-banner">Explore our products</h3>
+                            <a class="extra-info" href="products.html" target="_blank">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid px-0">
+        <div class="bg-section">
+            <div class="width-container row py-5">
+                <div class="banner-wrap_info col-lg-6">
+                    <h2 class="title-banner">
+                        WE KNOW JEWELLERY –
+                        <br>
+                        & WE KNOW OUR CUSTOMERS
+                    </h2>
+                    <p class="info-banner">
+                        Cenean imperdiet. Proin viverra, ligula sit amet ultrices semper, ligula arcu tristique sapien,
+                        a
+                        accumsan nisi mauris ac eros. Vestibulum fringilla pede sit amet augue. Donec quam felis,
+                        ultricies
+                        nec, pellentesque eu, pretium quis, sem. Fusce fermentum odio nec arcu.
+                    </p>
+                </div>
+                <div class="col-lg-6 pe-0 flex-style">
+                    <div class="grid-imgs_position">
+                        <div class="grid">
+                            <img src="img/banner_17.avif" alt="Earrings">
+                        </div>
+                        <div class="grid">
+                            <img src="img/banner_18.webp" alt="Woman in the shadow">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid border-style py-5 px-0">
+        <div class="width-container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-12 padding-style">
+                    <div class="icon-world"></div>
+                    <div class="block-text_style">
+                        <h3 class="title-icon">Shipping Worldwide</h3>
+                        <p class="lorem-text">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 padding-style">
+                    <div class="icon-return"></div>
+                    <div class="block-text_style">
+                        <h3 class="title-icon">14 Days Return</h3>
+                        <p class="lorem-text">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 padding-style">
+                    <div class="icon-security"></div>
+                    <div class="block-text_style">
+                        <h3 class="title-icon">Security Payment</h3>
+                        <p class="lorem-text mb-0">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid block-online_jewellers py-5">
+        <div class="width-container row">
+            <div class="col-lg-6">
+                <img class="block-online_img" src="img/banner_19.webp" alt="Rings with ribbon">
+            </div>
+            <div class="banner-wrap_info col-lg-6">
+                <h2 class="title-banner">
+                    TOP JEWELLERS AT ICE ONLINE
+                </h2>
+                <p class="info-banner">
+                    Cenean imperdiet. Proin viverra, ligula sit amet ultrices semper, ligula arcu tristique sapien,
+                    a accumsan nisi mauris ac eros. Vestibulum fringilla pede sit amet augue. Donec quam felis,
+                    ultricies nec, pellentesque eu, pretium quis, sem. Fusce fermentum odio nec arcu.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid block-reviews py-5">
+        <div class="width-container position-relative">
+            <div class="wrapper">
+                <div class="carousel-imgs">
+                    <div class="block-img">
+                        <div class="img-banner">
+                            <div class="info-container">
+                                <div class="flex-stars">
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                </div>
+                                <div class="font-style">
+                                    <h3 class="name-block">“Amazing piece of history”</h3>
+                                    <p class="info-banner">There are many variations of passages of Lorem Ipsum
+                                        available, but the majority have
+                                        suffered alteration in some form, by injected humour, or randomised words which
+                                        don't look even slightly believable. </p>
+                                </div>
+                            </div>
+                            <img class="avatar" src="img/review_imgs/tesm_1.jpg" alt="Ann Smith">
+                            <div class="font-style">
+                                <h3 class="name-banner">Anna Smith</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-img">
+                        <div class="img-banner">
+                            <div class="info-container">
+                                <div class="flex-stars">
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                </div>
+                                <div class="font-style">
+                                    <h3 class="name-block">“Fabulous Grounds”</h3>
+                                    <p class="info-banner">There are many variations of passages of Lorem Ipsum
+                                        available, but the majority have
+                                        suffered alteration in some form, by injected humour, or randomised words which
+                                        don't look even slightly believable. </p>
+                                </div>
+                            </div>
+                            <img class="avatar" src="img/review_imgs/tesm_2.jpg" alt="Saitama One">
+                            <div class="font-style">
+                                <h3 class="name-banner">Saitama One</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-img">
+                        <div class="img-banner">
+                            <div class="info-container">
+                                <div class="flex-stars">
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                </div>
+                                <div class="font-style">
+                                    <h3 class="name-block">“Stunning Design”</h3>
+                                    <p class="info-banner">There are many variations of passages of Lorem Ipsum
+                                        available, but the majority have
+                                        suffered alteration in some form, by injected humour, or randomised words which
+                                        don't look even slightly believable. </p>
+                                </div>
+                            </div>
+                            <img class="avatar" src="img/review_imgs/tesm_3.jpg" alt="Sara Colinton">
+                            <div class="font-style">
+                                <h3 class="name-banner">Sara Colinton</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-img">
+                        <div class="img-banner">
+                            <div class="info-container">
+                                <div class="flex-stars">
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                </div>
+                                <div class="font-style">
+                                    <h3 class="name-block">“Amazing piece of history”</h3>
+                                    <p class="info-banner">There are many variations of passages of Lorem Ipsum
+                                        available, but the majority have
+                                        suffered alteration in some form, by injected humour, or randomised words which
+                                        don't look even slightly believable. </p>
+                                </div>
+                            </div>
+                            <img class="avatar" src="img/review_imgs/tesm_4.jpg" alt="Shetty Jamie">
+                            <div class="font-style">
+                                <h3 class="name-banner">Shetty Jamie</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-direction="left" class="icon-left_prev click-btn"></div>
+            <div data-direction="right" class="icon-right_next click-btn"></div>
+        </div>
+    </section>
+    <hr class="my-0">
+    <section class="width-container block-brands mt-5">
+        <div class="row">
+            <div class="col-2">
+                <img src="img/brands_logo/brand_1.webp" alt="Kingcrown company">
+            </div>
+            <div class="col-2">
+                <img src="img/brands_logo/brand_2.webp" alt="Luxury company">
+            </div>
+            <div class="col-2">
+                <img src="img/brands_logo/brand_3.webp" alt="Crown company">
+            </div>
+            <div class="col-2">
+                <img src="img/brands_logo/brand_4.webp" alt="Berlians company">
+            </div>
+            <div class="col-2">
+                <img src="img/brands_logo/brand_5.webp" alt="Wonder company">
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="container-fluid border-style py-5 px-0">
+        <div class="width-container">
+            <div class="grid-footer_container">
+                <div class="grid-item">
+                    <h3 class="title-text text-1">Customer Services</h3>
+                    <ul>
+                        <li class="option-point"><a class="info-banner" href="#">Contact Us</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Track Your Order</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Product Care & Repair</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Book an Appointment</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Frequently Asked Questions</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Shipping & Returns</a></li>
+                    </ul>
+                </div>
+                <div class="grid-item">
+                    <h3 class="title-text text-1">About Us</h3>
+                    <ul>
+                        <li class="option-point"><a class="info-banner" href="#">About Us</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">FAQ</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Our Producers</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Sitemap</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Terms & Conditions</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="grid-item">
+                    <h3 class="title-text text-1">Catalog</h3>
+                    <ul>
+                        <li class="option-point"><a class="info-banner" href="#">Earrings</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Necklaces</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Bracelets</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Rings</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Jewelry Box</a></li>
+                        <li class="option-point"><a class="info-banner" href="#">Studs</a></li>
+                    </ul>
+                </div>
+                <div class="grid-item">
+                    <h3 class="title-text text-1">Our Newsletter</h3>
+                    <p class="info-banner m-0">Sign up for the latest Ice offers and exclusives.</p>
+                    <form action="#" class="my-3">
+                        <div class="form-icon_container">
+                            <input class="input-style" type="email" name="email" placeholder="Your email" required>
+                            <button class="button-style" type="submit">
+                                <span class="icon-email"></span>
+                            </button>
+                        </div>
+                    </form>
+                    <ul class="flex-icon_container">
+                        <li class="bg-circle">
+                            <a class="icon-facebook" href="https://en-gb.facebook.com/"
+                               target="_blank"></a>
+                        </li>
+                        <li class="bg-circle">
+                            <a class="icon-twitter" href="https://twitter.com/i/flow/login"
+                               target="_blank"></a>
+                        </li>
+                        <li class="bg-circle">
+                            <a class="icon-instagram" href="https://www.instagram.com/"
+                               target="_blank"></a>
+                        </li>
+                        <li class="bg-circle">
+                            <a class="icon-youtube" href="https://www.youtube.com/"
+                               target="_blank"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<hr class="m-0">
+<footer>
+    <div class="container-fluid px-0">
+        <div class="width-container">
+            <div class="flex-footer_container">
+                <div>
+                    <p class="info-banner m-0">Copyright © 2024 Anastasia Hrynkevich</p>
+                </div>
+                <div class="img-payment"></div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div id="up-click" class="bg-scroll_up">
+    <button class="up-icon"></button>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/cart.js"></script>
+<script>
+    let utils = new Utilities();
+    let blockSlider = new BlockSlider();
+    Cart.renderCart();
+
+    utils.scrollUp();
+    blockSlider.init('.wrapper');
+</script>
+
+</body>
+</html>

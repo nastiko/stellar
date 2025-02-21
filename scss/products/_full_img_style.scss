@@ -1,0 +1,107 @@
+@import "../helpers/variables";
+@import "../helpers/placeholder";
+
+.bg-title_section {
+  background-image: url("../img/slider_4.webp");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 720px;
+
+  @media only screen and (max-width: 50em) {
+    height: 400px;
+  }
+
+  .h1-style {
+    font-size: $space-76 !important;
+  }
+
+  .inside-text {
+    .container {
+      text-shadow: none;
+    }
+  }
+
+  .page-title {
+    color: $color-black;
+    text-shadow: 0 0 20px $color-bone;
+  }
+
+  .page-highlighter {
+    a {
+      font-size: 14px;
+    }
+  }
+
+  .items-collection {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    @include font-weight(heavy);
+
+    @media only screen and (max-width: 50em) {
+      display: none;
+    }
+
+    .block-item {
+      width: 170px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 15px;
+      position: relative;
+      color: $color-black;
+      cursor: pointer;
+
+      &:hover {
+        .img-item {
+          border: 2px solid $color-sand;
+          padding: 5px;
+        }
+
+        .title-item_style {
+          color: $color-sand;
+        }
+
+        h6:before {
+          width: 100%;
+        }
+      }
+
+      h6 {
+        text-align: center;
+      }
+
+      h6:before {
+        content: "";
+        width: 0;
+        height: 2px;
+        background: #cb8161;
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translate(-50%);
+        bottom: 2px;
+        position: absolute;
+      }
+
+      .title-item_style {
+        font-size: 14px;
+        color: $color-black;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        @include font-weight(heavy);
+      }
+    }
+  }
+}
+
+.img-item {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}

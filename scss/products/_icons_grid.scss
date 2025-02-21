@@ -1,0 +1,26 @@
+@import "../helpers/variables";
+
+.icon-grid_3x3, .icon-grid_4x3 {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  &:hover {
+    filter: invert(100%) sepia(97%) saturate(46%) hue-rotate(141deg) brightness(98%) contrast(100%);
+  }
+}
+
+.icon-grid_3x3 {
+  background-image: url("../img/grid-3x3.svg");
+}
+
+.icon-grid_4x3 {
+  background-image: url("../img/grid-4x3.svg");
+  margin: 0 4px;
+}
+
+.vertical-line {
+  border-left: 2px solid $color-jupiter;
+  height: 35px;
+}

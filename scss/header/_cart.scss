@@ -1,0 +1,164 @@
+@import "../helpers/variables";
+@import "../helpers/placeholder";
+
+
+#cart {
+  padding: 20px 30px;
+
+  .btn-close:focus {
+    box-shadow: none;
+  }
+
+  .offcanvas-title {
+    color: $color-black;
+    font-family: $font-cormorant;
+    font-size: 30px;
+    @include font-weight(heavy);
+    line-height: 35px;
+  }
+
+  .offcanvas-body {
+    .offcanvas-flex_container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2rem;
+
+      img {
+        width: 72px;
+        height: 72px;
+        border: 1px solid $color-lunar;
+      }
+
+      .info-container {
+        margin-left: 15px;
+
+        .product-name {
+          font-size: 12px;
+          text-align: start;
+          margin-bottom: 10px;
+        }
+
+        .add-remove_item {
+          width: 100px;
+          height: 30px;
+          font-size: 14px;
+
+          button {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+
+      .price-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        flex: 1;
+        row-gap: 35px;
+
+        .icon-close {
+          content: url(../img/close.svg);
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          vertical-align: middle;
+        }
+
+        p {
+          color: $color-sand;
+          font-size: 14px;
+          @include font-weight(heavy);
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .offcanvas-footer {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 20px 30px 30px;
+    background-color: $color-white;
+    box-shadow: 5px 5px 10px #efefef, 20px -5px 20px 0px #efefef;
+
+    .flex-icon_container {
+      justify-content: space-evenly;
+
+      .bg-circle {
+        width: 50px;
+        height: 50px;
+
+        .icon-calendar, .icon-percent, .icon-delivery {
+          width: 40px;
+          height: 40px;
+
+          &:after {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            vertical-align: top;
+            margin: 10px;
+          }
+        }
+      }
+    }
+
+    .total-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: $color-black;
+
+      .total-item {
+        font-size: 16px;
+        @include font-weight(heavy);
+        margin: 0;
+      }
+
+      .total-price {
+        font-size: 25px;
+        color: $color-sand;
+        @include font-weight(medium);
+        margin: 0;
+      }
+    }
+
+    .info-taxes {
+      font-size: 13px;
+      color: $color-lunar;
+      padding: 0 0 10px;
+      margin: 0;
+    }
+
+    .button-banners {
+      width: 100%;
+      margin-top: 20px;
+
+      &:hover {
+        outline: 0;
+        color: $color-white;
+        background-color: $color-sand;
+        border-color: $color-sand;
+      }
+
+      .link-style {
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
+
+.icon-calendar:after {
+  content: url("../img/calendar.svg");
+}
+
+.icon-percent:after {
+  content: url("../img/percent.svg");
+}
+
+.icon-delivery:after {
+  content: url("../img/delivery.svg");
+}

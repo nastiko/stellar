@@ -1,0 +1,28 @@
+@import "../helpers/variables";
+@import "../helpers/placeholder";
+
+.block-may_like {
+  padding: 3rem 0;
+  @media only screen and (max-width: 62em) {
+    padding: 0;
+  }
+}
+
+.title-header {
+  font-size: 28px;
+  font-family: $font-cormorant;
+  color: $color-black;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2rem;
+  @include font-weight(heavy);
+
+  &:after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background: $color-sand;
+    margin: 10px auto;
+  }
+}

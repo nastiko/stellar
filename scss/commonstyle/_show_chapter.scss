@@ -1,0 +1,31 @@
+@import "../helpers/variables";
+@import "../helpers/placeholder";
+
+.page-highlighter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-size: 20px;
+  margin-bottom: 2rem;
+  @include font-weight(heavy);
+
+  .prev-link {
+    color: $color-lunar;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-sand;
+    }
+  }
+
+  .arrow-backup {
+    background-image: url("../img/right_backup.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 10px;
+    height: 15px;
+    margin: 0;
+  }
+}

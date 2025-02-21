@@ -1,0 +1,32 @@
+@import "../helpers/variables";
+
+.position-nav_filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .filter-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .icon-filter {
+      background-image: url("../img/filter.svg");
+      background-size: contain;
+      width: 35px;
+      height: 35px;
+      border: 2px solid $color-black;
+      padding: 2px;
+      cursor: pointer;
+    }
+  }
+
+  .grids-icon_position {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.grids-block_style {
+  border: 1px solid $color-jupiter;
+}

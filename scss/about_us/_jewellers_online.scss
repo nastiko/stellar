@@ -1,0 +1,36 @@
+@import "../helpers/variables";
+
+.block-online_jewellers {
+  background-color: $color-pink_diminishing;
+
+  .row {
+    align-items: center;
+
+    .col-lg-6 {
+      padding: 0;
+
+      @media only screen and (max-width: 62em) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+
+    .block-online_img {
+      max-width: 100%;
+    }
+
+    .banner-wrap_info {
+      max-width: 100%;
+      margin: 0;
+
+      @media only screen and (max-width: 62em) {
+        margin-top: 3rem;
+      }
+
+      .info-banner {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
